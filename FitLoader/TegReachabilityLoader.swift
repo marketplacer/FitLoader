@@ -26,16 +26,16 @@ public class TegReachabilityLoader {
   // Custom error handler.
   // If it returns true it means the error is handled and no error messages are shown
   // If it returns false - it shows the normal error messages.
-  var onError: ((NSError, NSHTTPURLResponse?, String?)->(Bool))?
+  public var onError: ((NSError, NSHTTPURLResponse?, String?)->(Bool))?
   
   // The top view of the view controller will contain an error message view
-  weak var reachableViewController: TegReachableViewController?
+  public weak var reachableViewController: TegReachableViewController?
   
   // If present - called before loading is started. Useful to show 'loading' progress indicator.
-  var onStarted: (()->())?
+  public var onStarted: (()->())?
   
   // If present - called before loading has finished. Useful to hide 'loading' progress indicator.
-  var onFinishedWithSuccessOrError: (()->())?
+  public var onFinishedWithSuccessOrError: (()->())?
   
   public init(httpText: TegHttpText,
     requestIdentity: TegHttpRequestIdentity,

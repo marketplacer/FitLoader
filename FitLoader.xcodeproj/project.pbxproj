@@ -57,10 +57,21 @@
 		7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EEF205A1B2A516700864CC7 /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; };
 		7EEF205D1B2A51D500864CC7 /* MprHttp.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EEF205E1B2A520A00864CC7 /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; };
+		7EEF205F1B2A520A00864CC7 /* MprHttp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EEF20611B2A532800864CC7 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
+		7EEF20621B2A532800864CC7 /* FitLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7EADD0C81B295BCC003684AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EADD0B21B295BCC003684AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EADD0BA1B295BCC003684AC;
+			remoteInfo = FitLoader;
+		};
+		7EEF20631B2A532800864CC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EADD0B21B295BCC003684AC /* Project object */;
 			proxyType = 1;
@@ -88,6 +99,18 @@
 			files = (
 				7EEF205D1B2A51D500864CC7 /* MprHttp.framework in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EEF20601B2A520A00864CC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EEF205F1B2A520A00864CC7 /* MprHttp.framework in Embed Frameworks */,
+				7EEF20621B2A532800864CC7 /* FitLoader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -145,6 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEF205E1B2A520A00864CC7 /* MprHttp.framework in Frameworks */,
+				7EEF20611B2A532800864CC7 /* FitLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +395,13 @@
 				7E73614D1B2A42C0007BD5EF /* Sources */,
 				7E73614E1B2A42C0007BD5EF /* Frameworks */,
 				7E73614F1B2A42C0007BD5EF /* Resources */,
+				7EEF20601B2A520A00864CC7 /* Embed Frameworks */,
+				7EEF20651B2A539000864CC7 /* Copy frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7EEF20641B2A532800864CC7 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -499,7 +527,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/usr/local/bin/carthage copy-frameworks";
-			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework";
+			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework\n$(SRCROOT)/Carthage/Build/iOS/MprHttp.framework";
+		};
+		7EEF20651B2A539000864CC7 /* Copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework\n$(SRCROOT)/Carthage/Build/iOS/MprHttp.framework";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -572,6 +614,11 @@
 			target = 7EADD0BA1B295BCC003684AC /* FitLoader */;
 			targetProxy = 7EADD0C81B295BCC003684AC /* PBXContainerItemProxy */;
 		};
+		7EEF20641B2A532800864CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EADD0BA1B295BCC003684AC /* FitLoader */;
+			targetProxy = 7EEF20631B2A532800864CC7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -590,6 +637,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -605,6 +656,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

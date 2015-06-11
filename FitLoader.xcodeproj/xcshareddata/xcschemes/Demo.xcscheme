@@ -23,14 +23,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E7361641B2A42C0007BD5EF"
-               BuildableName = "DemoTests.xctest"
-               BlueprintName = "DemoTests"
+               BlueprintIdentifier = "7EADD0BA1B295BCC003684AC"
+               BuildableName = "FitLoader.framework"
+               BlueprintName = "FitLoader"
                ReferencedContainer = "container:FitLoader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,16 +42,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E7361641B2A42C0007BD5EF"
-               BuildableName = "DemoTests.xctest"
-               BlueprintName = "DemoTests"
-               ReferencedContainer = "container:FitLoader.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
