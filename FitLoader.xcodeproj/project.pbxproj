@@ -52,6 +52,10 @@
 		7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */; };
 		7EADD1441B296924003684AC /* TegReachabilityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */; };
 		7EADD1451B296951003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
+		7EB5F6181B2A5479001D818F /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
+		7EB5F6191B2A5479001D818F /* FitLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EB5F61B1B2A557A001D818F /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
+		7EB5F61C1B2A557A001D818F /* Dodo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
 		7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
 		7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -59,8 +63,6 @@
 		7EEF205D1B2A51D500864CC7 /* MprHttp.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EEF205E1B2A520A00864CC7 /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; };
 		7EEF205F1B2A520A00864CC7 /* MprHttp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7EEF20611B2A532800864CC7 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
-		7EEF20621B2A532800864CC7 /* FitLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +110,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7EEF205F1B2A520A00864CC7 /* MprHttp.framework in Embed Frameworks */,
-				7EEF20621B2A532800864CC7 /* FitLoader.framework in Embed Frameworks */,
+				7EB5F61C1B2A557A001D818F /* Dodo.framework in Embed Frameworks */,
+				7EB5F6191B2A5479001D818F /* FitLoader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EEF205E1B2A520A00864CC7 /* MprHttp.framework in Frameworks */,
-				7EEF20611B2A532800864CC7 /* FitLoader.framework in Frameworks */,
+				7EB5F61B1B2A557A001D818F /* Dodo.framework in Frameworks */,
+				7EB5F6181B2A5479001D818F /* FitLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

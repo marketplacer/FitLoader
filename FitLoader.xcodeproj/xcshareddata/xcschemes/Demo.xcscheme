@@ -20,20 +20,6 @@
                ReferencedContainer = "container:FitLoader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7EADD0BA1B295BCC003684AC"
-               BuildableName = "FitLoader.framework"
-               BlueprintName = "FitLoader"
-               ReferencedContainer = "container:FitLoader.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
