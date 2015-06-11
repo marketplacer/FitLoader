@@ -1,0 +1,10 @@
+framework module MprHttp {
+  umbrella header "MprHttp.h"
+
+  export *
+  module * { export * }
+}
+
+module MprHttp.Swift {
+    header "MprHttp-Swift.h"
+}

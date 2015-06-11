@@ -55,6 +55,8 @@
 		7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
 		7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
 		7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EEF205A1B2A516700864CC7 /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; };
+		7EEF205D1B2A51D500864CC7 /* MprHttp.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EEF20591B2A516700864CC7 /* MprHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EEF205C1B2A51CB00864CC7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EEF205D1B2A51D500864CC7 /* MprHttp.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +137,7 @@
 		7EADD1351B296866003684AC /* TegHttpTextMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpTextMock.swift; sourceTree = "<group>"; };
 		7EADD1361B296866003684AC /* ReachabilityMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityMock.swift; sourceTree = "<group>"; };
 		7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityLoaderTests.swift; sourceTree = "<group>"; };
+		7EEF20591B2A516700864CC7 /* MprHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MprHttp.framework; path = Carthage/Build/iOS/MprHttp.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEF205A1B2A516700864CC7 /* MprHttp.framework in Frameworks */,
 				7EADD0E11B295CD0003684AC /* Dodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +311,7 @@
 		7EADD0DF1B295CB6003684AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EEF20591B2A516700864CC7 /* MprHttp.framework */,
 				7EADD0E01B295CD0003684AC /* Dodo.framework */,
 			);
 			path = Frameworks;
@@ -392,6 +407,7 @@
 				7EADD0C31B295BCC003684AC /* Frameworks */,
 				7EADD0C41B295BCC003684AC /* Resources */,
 				7EEC33351B296F58000C3DE0 /* CopyFiles */,
+				7EEF205C1B2A51CB00864CC7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -770,6 +786,7 @@
 				7E73616E1B2A42C1007BD5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EADD0B51B295BCC003684AC /* Build configuration list for PBXProject "FitLoader" */ = {
 			isa = XCConfigurationList;
