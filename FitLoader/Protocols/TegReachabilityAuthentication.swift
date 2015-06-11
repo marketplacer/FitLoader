@@ -1,6 +1,6 @@
 import Foundation
 import MprHttp
 
-protocol TegReachabilityAuthentication {
-  func httpHeader() -> TegHttpHeader?
+public protocol TegReachabilityAuthentication {
+  public func httpHeader() -> TegHttpHeader?
 }

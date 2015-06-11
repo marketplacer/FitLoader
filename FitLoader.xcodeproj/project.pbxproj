@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		7E7361561B2A42C0007BD5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361551B2A42C0007BD5EF /* AppDelegate.swift */; };
-		7E7361581B2A42C0007BD5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361571B2A42C0007BD5EF /* ViewController.swift */; };
-		7E73615B1B2A42C0007BD5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7361591B2A42C0007BD5EF /* Main.storyboard */; };
 		7E73615D1B2A42C0007BD5EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E73615C1B2A42C0007BD5EF /* Images.xcassets */; };
 		7E7361601B2A42C0007BD5EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E73615E1B2A42C0007BD5EF /* LaunchScreen.xib */; };
+		7E7361741B2A432B007BD5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7361731B2A432B007BD5EF /* Main.storyboard */; };
+		7E73617C1B2A436A007BD5EF /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361761B2A436A007BD5EF /* AnswerViewController.swift */; };
+		7E73617D1B2A436A007BD5EF /* Error422ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361771B2A436A007BD5EF /* Error422ViewController.swift */; };
+		7E73617E1B2A436A007BD5EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361781B2A436A007BD5EF /* LoginViewController.swift */; };
+		7E73617F1B2A436A007BD5EF /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361791B2A436A007BD5EF /* MyAccountViewController.swift */; };
+		7E7361801B2A436A007BD5EF /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E73617A1B2A436A007BD5EF /* TextViewController.swift */; };
+		7E7361811B2A436A007BD5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E73617B1B2A436A007BD5EF /* ViewController.swift */; };
+		7E7361891B2A43A1007BD5EF /* TegAuthenticatedLoader_loginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361841B2A43A1007BD5EF /* TegAuthenticatedLoader_loginScreenPresenter.swift */; };
+		7E73618A1B2A43A1007BD5EF /* TegMockedHttpRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361851B2A43A1007BD5EF /* TegMockedHttpRequests.swift */; };
+		7E73618B1B2A43A1007BD5EF /* TegRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361861B2A43A1007BD5EF /* TegRequestType.swift */; };
+		7E73618C1B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361871B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift */; };
+		7E73618D1B2A43A1007BD5EF /* TegRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361881B2A43A1007BD5EF /* TegRequestUrl.swift */; };
+		7E7361951B2A43E4007BD5EF /* TegAuthenticatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361931B2A43E4007BD5EF /* TegAuthenticatedLoader.swift */; };
+		7E7361961B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361941B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift */; };
+		7E73619A1B2A457C007BD5EF /* TegStoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361981B2A457C007BD5EF /* TegStoryboardNames.swift */; };
+		7E73619B1B2A457C007BD5EF /* TegViewControllerNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361991B2A457C007BD5EF /* TegViewControllerNames.swift */; };
+		7E73619D1B2A4585007BD5EF /* TegPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E73619C1B2A4585007BD5EF /* TegPresentViewController.swift */; };
 		7EADD0C11B295BCC003684AC /* FitLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD0C01B295BCC003684AC /* FitLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D71B295C03003684AC /* TegReachability.swift */; };
 		7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */; };
@@ -91,10 +106,25 @@
 		7E7361511B2A42C0007BD5EF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7361541B2A42C0007BD5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7361551B2A42C0007BD5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E7361571B2A42C0007BD5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E73615A1B2A42C0007BD5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E73615C1B2A42C0007BD5EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7E73615F1B2A42C0007BD5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7E7361731B2A432B007BD5EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7E7361761B2A436A007BD5EF /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		7E7361771B2A436A007BD5EF /* Error422ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error422ViewController.swift; sourceTree = "<group>"; };
+		7E7361781B2A436A007BD5EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7E7361791B2A436A007BD5EF /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		7E73617A1B2A436A007BD5EF /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		7E73617B1B2A436A007BD5EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E7361841B2A43A1007BD5EF /* TegAuthenticatedLoader_loginScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegAuthenticatedLoader_loginScreenPresenter.swift; sourceTree = "<group>"; };
+		7E7361851B2A43A1007BD5EF /* TegMockedHttpRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegMockedHttpRequests.swift; sourceTree = "<group>"; };
+		7E7361861B2A43A1007BD5EF /* TegRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegRequestType.swift; sourceTree = "<group>"; };
+		7E7361871B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegRequestTypeHttpMethod.swift; sourceTree = "<group>"; };
+		7E7361881B2A43A1007BD5EF /* TegRequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegRequestUrl.swift; sourceTree = "<group>"; };
+		7E7361931B2A43E4007BD5EF /* TegAuthenticatedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegAuthenticatedLoader.swift; sourceTree = "<group>"; };
+		7E7361941B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegAuthenticatedLoader_loginDelegate.swift; sourceTree = "<group>"; };
+		7E7361981B2A457C007BD5EF /* TegStoryboardNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStoryboardNames.swift; sourceTree = "<group>"; };
+		7E7361991B2A457C007BD5EF /* TegViewControllerNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegViewControllerNames.swift; sourceTree = "<group>"; };
+		7E73619C1B2A4585007BD5EF /* TegPresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegPresentViewController.swift; sourceTree = "<group>"; };
 		7EADD0BB1B295BCC003684AC /* FitLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EADD0BF1B295BCC003684AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EADD0C01B295BCC003684AC /* FitLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FitLoader.h; sourceTree = "<group>"; };
@@ -183,9 +213,10 @@
 		7E7361521B2A42C0007BD5EF /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7E7361821B2A4390007BD5EF /* Core */,
+				7E7361751B2A435D007BD5EF /* ViewControllers */,
 				7E7361551B2A42C0007BD5EF /* AppDelegate.swift */,
-				7E7361571B2A42C0007BD5EF /* ViewController.swift */,
-				7E7361591B2A42C0007BD5EF /* Main.storyboard */,
+				7E7361731B2A432B007BD5EF /* Main.storyboard */,
 				7E73615C1B2A42C0007BD5EF /* Images.xcassets */,
 				7E73615E1B2A42C0007BD5EF /* LaunchScreen.xib */,
 				7E7361531B2A42C0007BD5EF /* Supporting Files */,
@@ -199,6 +230,60 @@
 				7E7361541B2A42C0007BD5EF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E7361751B2A435D007BD5EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E7361761B2A436A007BD5EF /* AnswerViewController.swift */,
+				7E7361771B2A436A007BD5EF /* Error422ViewController.swift */,
+				7E7361781B2A436A007BD5EF /* LoginViewController.swift */,
+				7E7361791B2A436A007BD5EF /* MyAccountViewController.swift */,
+				7E73617A1B2A436A007BD5EF /* TextViewController.swift */,
+				7E73617B1B2A436A007BD5EF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7E7361821B2A4390007BD5EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E7361921B2A43D4007BD5EF /* AuthenticatedLoader */,
+				7E7361831B2A4398007BD5EF /* Http */,
+				7E7361971B2A455F007BD5EF /* PresentingViewControllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7E7361831B2A4398007BD5EF /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7E7361841B2A43A1007BD5EF /* TegAuthenticatedLoader_loginScreenPresenter.swift */,
+				7E7361851B2A43A1007BD5EF /* TegMockedHttpRequests.swift */,
+				7E7361861B2A43A1007BD5EF /* TegRequestType.swift */,
+				7E7361871B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift */,
+				7E7361881B2A43A1007BD5EF /* TegRequestUrl.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		7E7361921B2A43D4007BD5EF /* AuthenticatedLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7E7361931B2A43E4007BD5EF /* TegAuthenticatedLoader.swift */,
+				7E7361941B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift */,
+			);
+			path = AuthenticatedLoader;
+			sourceTree = "<group>";
+		};
+		7E7361971B2A455F007BD5EF /* PresentingViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E7361981B2A457C007BD5EF /* TegStoryboardNames.swift */,
+				7E7361991B2A457C007BD5EF /* TegViewControllerNames.swift */,
+				7E73619C1B2A4585007BD5EF /* TegPresentViewController.swift */,
+			);
+			path = PresentingViewControllers;
 			sourceTree = "<group>";
 		};
 		7EADD0B11B295BCC003684AC = {
@@ -528,7 +613,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E73615B1B2A42C0007BD5EF /* Main.storyboard in Resources */,
+				7E7361741B2A432B007BD5EF /* Main.storyboard in Resources */,
 				7E7361601B2A42C0007BD5EF /* LaunchScreen.xib in Resources */,
 				7E73615D1B2A42C0007BD5EF /* Images.xcassets in Resources */,
 			);
@@ -586,8 +671,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7361581B2A42C0007BD5EF /* ViewController.swift in Sources */,
+				7E73618B1B2A43A1007BD5EF /* TegRequestType.swift in Sources */,
+				7E7361961B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift in Sources */,
+				7E7361951B2A43E4007BD5EF /* TegAuthenticatedLoader.swift in Sources */,
+				7E73618C1B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift in Sources */,
+				7E73617E1B2A436A007BD5EF /* LoginViewController.swift in Sources */,
+				7E73619A1B2A457C007BD5EF /* TegStoryboardNames.swift in Sources */,
+				7E73617C1B2A436A007BD5EF /* AnswerViewController.swift in Sources */,
+				7E73618A1B2A43A1007BD5EF /* TegMockedHttpRequests.swift in Sources */,
+				7E73617F1B2A436A007BD5EF /* MyAccountViewController.swift in Sources */,
 				7E7361561B2A42C0007BD5EF /* AppDelegate.swift in Sources */,
+				7E73619D1B2A4585007BD5EF /* TegPresentViewController.swift in Sources */,
+				7E73619B1B2A457C007BD5EF /* TegViewControllerNames.swift in Sources */,
+				7E7361811B2A436A007BD5EF /* ViewController.swift in Sources */,
+				7E73617D1B2A436A007BD5EF /* Error422ViewController.swift in Sources */,
+				7E7361891B2A43A1007BD5EF /* TegAuthenticatedLoader_loginScreenPresenter.swift in Sources */,
+				7E73618D1B2A43A1007BD5EF /* TegRequestUrl.swift in Sources */,
+				7E7361801B2A436A007BD5EF /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,14 +770,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E7361591B2A42C0007BD5EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E73615A1B2A42C0007BD5EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E73615E1B2A42C0007BD5EF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

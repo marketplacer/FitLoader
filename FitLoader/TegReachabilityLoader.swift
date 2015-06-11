@@ -37,7 +37,7 @@ public class TegReachabilityLoader {
   // If present - called before loading has finished. Useful to hide 'loading' progress indicator.
   var onFinishedWithSuccessOrError: (()->())?
   
-  init(httpText: TegHttpText,
+  public init(httpText: TegHttpText,
     requestIdentity: TegHttpRequestIdentity,
     viewController: TegReachableViewController,
     authentication: TegReachabilityAuthentication?,
