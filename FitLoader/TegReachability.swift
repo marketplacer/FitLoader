@@ -41,7 +41,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
     return false
   }
 
-  func startListeningForNetworkStatusChanges(hostName: String) {
+  public func startListeningForNetworkStatusChanges(hostName: String) {
     if listeningForNetworkStatusChanges { return } // already setup
 
     let newReachability = Reachability(hostName: hostName)
@@ -52,7 +52,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
     reachability = newReachability
   }
 
-  func stopListeningForNetworkStatusChanges(hostName: String) {
+  public func stopListeningForNetworkStatusChanges(hostName: String) {
     if !listeningForNetworkStatusChanges { return } // not listening
 
     NSNotificationCenter.defaultCenter().removeObserver(self, name: kReachabilityChangedNotification, object: reachability)
