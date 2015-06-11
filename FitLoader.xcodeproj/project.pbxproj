@@ -34,7 +34,6 @@
 		7EADD1271B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */; };
 		7EADD12C1B296019003684AC /* TegQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12B1B296019003684AC /* TegQ.swift */; };
 		7EADD12E1B29603B003684AC /* TegString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12D1B29603B003684AC /* TegString.swift */; };
-		7EADD1311B296089003684AC /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E71B295D27003684AC /* MprHttp.framework */; };
 		7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */; };
 		7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1341B296866003684AC /* LyoutGuideMock.swift */; };
 		7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1351B296866003684AC /* TegHttpTextMock.swift */; };
@@ -50,19 +49,7 @@
 		7EADD1451B296951003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
 		7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
 		7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
-		7EEC33281B296EA0000C3DE0 /* TegDownloaderAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */; };
-		7EEC33291B296EA0000C3DE0 /* TegDownloaderMainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */; };
-		7EEC332A1B296EA0000C3DE0 /* TegHttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1141B295FA4003684AC /* TegHttpErrors.swift */; };
-		7EEC332B1B296EA0000C3DE0 /* TegDownloaderSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1151B295FA4003684AC /* TegDownloaderSession.swift */; };
-		7EEC332C1B296EA0000C3DE0 /* TegHttpContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1161B295FA4003684AC /* TegHttpContentType.swift */; };
-		7EEC332D1B296EA0000C3DE0 /* TegHttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1171B295FA4003684AC /* TegHttpHeader.swift */; };
-		7EEC332E1B296EA0000C3DE0 /* TegHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1181B295FA4003684AC /* TegHttpMethod.swift */; };
-		7EEC332F1B296EA0000C3DE0 /* TegHttpRequestIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1191B295FA4003684AC /* TegHttpRequestIdentity.swift */; };
-		7EEC33301B296EA0000C3DE0 /* TegHttpSensitiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11A1B295FA4003684AC /* TegHttpSensitiveText.swift */; };
-		7EEC33311B296EA0000C3DE0 /* TegHttpText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11B1B295FA4003684AC /* TegHttpText.swift */; };
-		7EEC33321B296EA0000C3DE0 /* TegMockedNSUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */; };
-		7EEC33331B296EA5000C3DE0 /* TegQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12B1B296019003684AC /* TegQ.swift */; };
-		7EEC33341B296EA5000C3DE0 /* TegString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12D1B29603B003684AC /* TegString.swift */; };
+		7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,14 +67,20 @@
 			remoteGlobalIDString = 7EADD0E61B295D27003684AC;
 			remoteInfo = MprHttp;
 		};
-		7EADD12F1B296069003684AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EADD0B21B295BCC003684AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EADD0E61B295D27003684AC;
-			remoteInfo = MprHttp;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EEC33351B296F58000C3DE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EEC33361B296F66000C3DE0 /* Dodo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7EADD0BB1B295BCC003684AC /* FitLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EADD1311B296089003684AC /* MprHttp.framework in Frameworks */,
 				7EADD0E11B295CD0003684AC /* Dodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +355,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7EADD1301B296069003684AC /* PBXTargetDependency */,
 			);
 			name = FitLoader;
 			productName = FitLoader;
@@ -377,7 +368,7 @@
 				7EADD0C21B295BCC003684AC /* Sources */,
 				7EADD0C31B295BCC003684AC /* Frameworks */,
 				7EADD0C41B295BCC003684AC /* Resources */,
-				7EEC33271B296E2D000C3DE0 /* Copy Frameworks */,
+				7EEC33351B296F58000C3DE0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -514,20 +505,6 @@
 			shellPath = "/usr/local/bin/carthage copy-frameworks";
 			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework";
 		};
-		7EEC33271B296E2D000C3DE0 /* Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/usr/local/bin/carthage copy-frameworks";
-			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,26 +512,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEC332B1B296EA0000C3DE0 /* TegDownloaderSession.swift in Sources */,
-				7EEC33311B296EA0000C3DE0 /* TegHttpText.swift in Sources */,
-				7EEC33331B296EA5000C3DE0 /* TegQ.swift in Sources */,
-				7EEC33301B296EA0000C3DE0 /* TegHttpSensitiveText.swift in Sources */,
 				7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */,
 				7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */,
-				7EEC332E1B296EA0000C3DE0 /* TegHttpMethod.swift in Sources */,
 				7EADD10C1B295D84003684AC /* Reachability.m in Sources */,
-				7EEC332A1B296EA0000C3DE0 /* TegHttpErrors.swift in Sources */,
 				7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
 				7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */,
-				7EEC33321B296EA0000C3DE0 /* TegMockedNSUrlSessionDataTask.swift in Sources */,
-				7EEC332D1B296EA0000C3DE0 /* TegHttpHeader.swift in Sources */,
-				7EEC33341B296EA5000C3DE0 /* TegString.swift in Sources */,
 				7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */,
-				7EEC332F1B296EA0000C3DE0 /* TegHttpRequestIdentity.swift in Sources */,
-				7EEC332C1B296EA0000C3DE0 /* TegHttpContentType.swift in Sources */,
 				7EADD0DE1B295C03003684AC /* TegReachabilityLoader.swift in Sources */,
-				7EEC33281B296EA0000C3DE0 /* TegDownloaderAsync.swift in Sources */,
-				7EEC33291B296EA0000C3DE0 /* TegDownloaderMainQueue.swift in Sources */,
 				7EADD0DD1B295C03003684AC /* TegReachabilityMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,11 +583,6 @@
 			isa = PBXTargetDependency;
 			target = 7EADD0E61B295D27003684AC /* MprHttp */;
 			targetProxy = 7EADD0F31B295D27003684AC /* PBXContainerItemProxy */;
-		};
-		7EADD1301B296069003684AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EADD0E61B295D27003684AC /* MprHttp */;
-			targetProxy = 7EADD12F1B296069003684AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
