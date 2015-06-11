@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MprHttp
 
 @objc
 public class TegReachabilityLoader {

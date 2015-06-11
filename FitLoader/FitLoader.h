@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char FitLoaderVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FitLoader/PublicHeader.h>
 
+#import "Reachability.h"
+
 

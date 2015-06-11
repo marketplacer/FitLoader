@@ -1,0 +1,10 @@
+framework module Dodo {
+  umbrella header "Dodo.h"
+
+  export *
+  module * { export * }
+}
+
+module Dodo.Swift {
+    header "Dodo-Swift.h"
+}

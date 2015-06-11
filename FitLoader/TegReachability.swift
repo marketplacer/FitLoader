@@ -62,7 +62,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   }
 
   func reachabilityChanged(notification: NSNotification) {
-    TegQ.main { [weak self] in
+     dispatch_async(dispatch_get_main_queue()) { [weak self] in
       self?.reloadFailedRequestAndUpdateStatusMessage()
     }
   }
