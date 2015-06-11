@@ -3,8 +3,8 @@
 //
 
 import UIKit
-import MprHttp
 import FitLoader
+import MprHttp
 
 public class TegAuthenticatedLoader: TegReachabilityLoader {
   private weak var delegate: TegAuthenticatedLoader_loginDelegate?

@@ -1,4 +1,6 @@
 import UIKit
+import MprHttp
+import FitLoader
 
 class TextViewController: UIViewController, TegReachableViewController {
   

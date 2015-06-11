@@ -27,33 +27,18 @@
 		7E73619A1B2A457C007BD5EF /* TegStoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361981B2A457C007BD5EF /* TegStoryboardNames.swift */; };
 		7E73619B1B2A457C007BD5EF /* TegViewControllerNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361991B2A457C007BD5EF /* TegViewControllerNames.swift */; };
 		7E73619D1B2A4585007BD5EF /* TegPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E73619C1B2A4585007BD5EF /* TegPresentViewController.swift */; };
+		7E7361A21B2A4773007BD5EF /* TegUrlEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361A11B2A4773007BD5EF /* TegUrlEncoder.swift */; };
 		7EADD0C11B295BCC003684AC /* FitLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD0C01B295BCC003684AC /* FitLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D71B295C03003684AC /* TegReachability.swift */; };
 		7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */; };
 		7EADD0DD1B295C03003684AC /* TegReachabilityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */; };
 		7EADD0DE1B295C03003684AC /* TegReachabilityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */; };
 		7EADD0E11B295CD0003684AC /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
-		7EADD0EC1B295D27003684AC /* MprHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD0EB1B295D27003684AC /* MprHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EADD0F21B295D27003684AC /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E71B295D27003684AC /* MprHttp.framework */; };
-		7EADD0F91B295D27003684AC /* MprHttpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0F81B295D27003684AC /* MprHttpTests.swift */; };
 		7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1011B295D60003684AC /* TegReachabilityAuthentication.swift */; };
 		7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */; };
 		7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1031B295D60003684AC /* TegReachableViewController.swift */; };
 		7EADD10C1B295D84003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
 		7EADD1111B295F88003684AC /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD1081B295D84003684AC /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EADD11D1B295FA4003684AC /* TegDownloaderAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */; };
-		7EADD11E1B295FA4003684AC /* TegDownloaderMainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */; };
-		7EADD11F1B295FA4003684AC /* TegHttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1141B295FA4003684AC /* TegHttpErrors.swift */; };
-		7EADD1201B295FA4003684AC /* TegDownloaderSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1151B295FA4003684AC /* TegDownloaderSession.swift */; };
-		7EADD1211B295FA4003684AC /* TegHttpContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1161B295FA4003684AC /* TegHttpContentType.swift */; };
-		7EADD1221B295FA4003684AC /* TegHttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1171B295FA4003684AC /* TegHttpHeader.swift */; };
-		7EADD1231B295FA4003684AC /* TegHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1181B295FA4003684AC /* TegHttpMethod.swift */; };
-		7EADD1241B295FA4003684AC /* TegHttpRequestIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1191B295FA4003684AC /* TegHttpRequestIdentity.swift */; };
-		7EADD1251B295FA4003684AC /* TegHttpSensitiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11A1B295FA4003684AC /* TegHttpSensitiveText.swift */; };
-		7EADD1261B295FA4003684AC /* TegHttpText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11B1B295FA4003684AC /* TegHttpText.swift */; };
-		7EADD1271B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */; };
-		7EADD12C1B296019003684AC /* TegQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12B1B296019003684AC /* TegQ.swift */; };
-		7EADD12E1B29603B003684AC /* TegString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12D1B29603B003684AC /* TegString.swift */; };
 		7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */; };
 		7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1341B296866003684AC /* LyoutGuideMock.swift */; };
 		7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1351B296866003684AC /* TegHttpTextMock.swift */; };
@@ -79,13 +64,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7EADD0BA1B295BCC003684AC;
 			remoteInfo = FitLoader;
-		};
-		7EADD0F31B295D27003684AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EADD0B21B295BCC003684AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EADD0E61B295D27003684AC;
-			remoteInfo = MprHttp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -125,6 +103,7 @@
 		7E7361981B2A457C007BD5EF /* TegStoryboardNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegStoryboardNames.swift; sourceTree = "<group>"; };
 		7E7361991B2A457C007BD5EF /* TegViewControllerNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegViewControllerNames.swift; sourceTree = "<group>"; };
 		7E73619C1B2A4585007BD5EF /* TegPresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegPresentViewController.swift; sourceTree = "<group>"; };
+		7E7361A11B2A4773007BD5EF /* TegUrlEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegUrlEncoder.swift; sourceTree = "<group>"; };
 		7EADD0BB1B295BCC003684AC /* FitLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FitLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EADD0BF1B295BCC003684AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EADD0C01B295BCC003684AC /* FitLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FitLoader.h; sourceTree = "<group>"; };
@@ -135,31 +114,12 @@
 		7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityMessage.swift; sourceTree = "<group>"; };
 		7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityLoader.swift; sourceTree = "<group>"; };
 		7EADD0E01B295CD0003684AC /* Dodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dodo.framework; path = Carthage/Build/iOS/Dodo.framework; sourceTree = SOURCE_ROOT; };
-		7EADD0E71B295D27003684AC /* MprHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MprHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EADD0EA1B295D27003684AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EADD0EB1B295D27003684AC /* MprHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MprHttp.h; sourceTree = "<group>"; };
-		7EADD0F11B295D27003684AC /* MprHttpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MprHttpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EADD0F71B295D27003684AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EADD0F81B295D27003684AC /* MprHttpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MprHttpTests.swift; sourceTree = "<group>"; };
 		7EADD1011B295D60003684AC /* TegReachabilityAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityAuthentication.swift; sourceTree = "<group>"; };
 		7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityMessageDelegate.swift; sourceTree = "<group>"; };
 		7EADD1031B295D60003684AC /* TegReachableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachableViewController.swift; sourceTree = "<group>"; };
 		7EADD1081B295D84003684AC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7EADD1091B295D84003684AC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7EADD10A1B295D84003684AC /* README_reachability */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_reachability; sourceTree = "<group>"; };
-		7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegDownloaderAsync.swift; sourceTree = "<group>"; };
-		7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegDownloaderMainQueue.swift; sourceTree = "<group>"; };
-		7EADD1141B295FA4003684AC /* TegHttpErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpErrors.swift; sourceTree = "<group>"; };
-		7EADD1151B295FA4003684AC /* TegDownloaderSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegDownloaderSession.swift; sourceTree = "<group>"; };
-		7EADD1161B295FA4003684AC /* TegHttpContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpContentType.swift; sourceTree = "<group>"; };
-		7EADD1171B295FA4003684AC /* TegHttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpHeader.swift; sourceTree = "<group>"; };
-		7EADD1181B295FA4003684AC /* TegHttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpMethod.swift; sourceTree = "<group>"; };
-		7EADD1191B295FA4003684AC /* TegHttpRequestIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpRequestIdentity.swift; sourceTree = "<group>"; };
-		7EADD11A1B295FA4003684AC /* TegHttpSensitiveText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpSensitiveText.swift; sourceTree = "<group>"; };
-		7EADD11B1B295FA4003684AC /* TegHttpText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpText.swift; sourceTree = "<group>"; };
-		7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegMockedNSUrlSessionDataTask.swift; sourceTree = "<group>"; };
-		7EADD12B1B296019003684AC /* TegQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegQ.swift; sourceTree = "<group>"; };
-		7EADD12D1B29603B003684AC /* TegString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegString.swift; sourceTree = "<group>"; };
 		7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachableViewControllerMock.swift; sourceTree = "<group>"; };
 		7EADD1341B296866003684AC /* LyoutGuideMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyoutGuideMock.swift; sourceTree = "<group>"; };
 		7EADD1351B296866003684AC /* TegHttpTextMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpTextMock.swift; sourceTree = "<group>"; };
@@ -189,21 +149,6 @@
 			files = (
 				7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */,
 				7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0E31B295D27003684AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0EE1B295D27003684AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EADD0F21B295D27003684AC /* MprHttp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +196,7 @@
 				7E7361921B2A43D4007BD5EF /* AuthenticatedLoader */,
 				7E7361831B2A4398007BD5EF /* Http */,
 				7E7361971B2A455F007BD5EF /* PresentingViewControllers */,
+				7E7361A11B2A4773007BD5EF /* TegUrlEncoder.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -293,8 +239,6 @@
 				7EADD0BD1B295BCC003684AC /* FitLoader */,
 				7EADD0CA1B295BCC003684AC /* FitLoaderTests */,
 				7E7361521B2A42C0007BD5EF /* Demo */,
-				7EADD0E81B295D27003684AC /* MprHttp */,
-				7EADD0F51B295D27003684AC /* MprHttpTests */,
 				7EADD0BC1B295BCC003684AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -304,8 +248,6 @@
 			children = (
 				7EADD0BB1B295BCC003684AC /* FitLoader.framework */,
 				7EADD0C61B295BCC003684AC /* FitLoaderTests.xctest */,
-				7EADD0E71B295D27003684AC /* MprHttp.framework */,
-				7EADD0F11B295D27003684AC /* MprHttpTests.xctest */,
 				7E7361511B2A42C0007BD5EF /* Demo.app */,
 			);
 			name = Products;
@@ -360,52 +302,6 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		7EADD0E81B295D27003684AC /* MprHttp */ = {
-			isa = PBXGroup;
-			children = (
-				7EADD12A1B296010003684AC /* Utils */,
-				7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */,
-				7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */,
-				7EADD1141B295FA4003684AC /* TegHttpErrors.swift */,
-				7EADD1151B295FA4003684AC /* TegDownloaderSession.swift */,
-				7EADD1161B295FA4003684AC /* TegHttpContentType.swift */,
-				7EADD1171B295FA4003684AC /* TegHttpHeader.swift */,
-				7EADD1181B295FA4003684AC /* TegHttpMethod.swift */,
-				7EADD1191B295FA4003684AC /* TegHttpRequestIdentity.swift */,
-				7EADD11A1B295FA4003684AC /* TegHttpSensitiveText.swift */,
-				7EADD11B1B295FA4003684AC /* TegHttpText.swift */,
-				7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */,
-				7EADD0EB1B295D27003684AC /* MprHttp.h */,
-				7EADD0E91B295D27003684AC /* Supporting Files */,
-			);
-			path = MprHttp;
-			sourceTree = "<group>";
-		};
-		7EADD0E91B295D27003684AC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7EADD0EA1B295D27003684AC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7EADD0F51B295D27003684AC /* MprHttpTests */ = {
-			isa = PBXGroup;
-			children = (
-				7EADD0F81B295D27003684AC /* MprHttpTests.swift */,
-				7EADD0F61B295D27003684AC /* Supporting Files */,
-			);
-			path = MprHttpTests;
-			sourceTree = "<group>";
-		};
-		7EADD0F61B295D27003684AC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7EADD0F71B295D27003684AC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		7EADD1001B295D59003684AC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,15 +320,6 @@
 				7EADD10A1B295D84003684AC /* README_reachability */,
 			);
 			path = AppleReachability;
-			sourceTree = "<group>";
-		};
-		7EADD12A1B296010003684AC /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				7EADD12B1B296019003684AC /* TegQ.swift */,
-				7EADD12D1B29603B003684AC /* TegString.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		7EADD1321B296860003684AC /* Mocks */ = {
@@ -455,14 +342,6 @@
 			files = (
 				7EADD0C11B295BCC003684AC /* FitLoader.h in Headers */,
 				7EADD1111B295F88003684AC /* Reachability.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0E41B295D27003684AC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EADD0EC1B295D27003684AC /* MprHttp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,42 +403,6 @@
 			productReference = 7EADD0C61B295BCC003684AC /* FitLoaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7EADD0E61B295D27003684AC /* MprHttp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EADD0FA1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttp" */;
-			buildPhases = (
-				7EADD0E21B295D27003684AC /* Sources */,
-				7EADD0E31B295D27003684AC /* Frameworks */,
-				7EADD0E41B295D27003684AC /* Headers */,
-				7EADD0E51B295D27003684AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MprHttp;
-			productName = MprHttp;
-			productReference = 7EADD0E71B295D27003684AC /* MprHttp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7EADD0F01B295D27003684AC /* MprHttpTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EADD0FD1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttpTests" */;
-			buildPhases = (
-				7EADD0ED1B295D27003684AC /* Sources */,
-				7EADD0EE1B295D27003684AC /* Frameworks */,
-				7EADD0EF1B295D27003684AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EADD0F41B295D27003684AC /* PBXTargetDependency */,
-			);
-			name = MprHttpTests;
-			productName = MprHttpTests;
-			productReference = 7EADD0F11B295D27003684AC /* MprHttpTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -576,12 +419,6 @@
 						CreatedOnToolsVersion = 6.4;
 					};
 					7EADD0C51B295BCC003684AC = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					7EADD0E61B295D27003684AC = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					7EADD0F01B295D27003684AC = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -601,8 +438,6 @@
 			targets = (
 				7EADD0BA1B295BCC003684AC /* FitLoader */,
 				7EADD0C51B295BCC003684AC /* FitLoaderTests */,
-				7EADD0E61B295D27003684AC /* MprHttp */,
-				7EADD0F01B295D27003684AC /* MprHttpTests */,
 				7E7361501B2A42C0007BD5EF /* Demo */,
 			);
 		};
@@ -627,20 +462,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7EADD0C41B295BCC003684AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0E51B295D27003684AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0EF1B295D27003684AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -674,6 +495,7 @@
 				7E73618B1B2A43A1007BD5EF /* TegRequestType.swift in Sources */,
 				7E7361961B2A43E4007BD5EF /* TegAuthenticatedLoader_loginDelegate.swift in Sources */,
 				7E7361951B2A43E4007BD5EF /* TegAuthenticatedLoader.swift in Sources */,
+				7E7361A21B2A4773007BD5EF /* TegUrlEncoder.swift in Sources */,
 				7E73618C1B2A43A1007BD5EF /* TegRequestTypeHttpMethod.swift in Sources */,
 				7E73617E1B2A436A007BD5EF /* LoginViewController.swift in Sources */,
 				7E73619A1B2A457C007BD5EF /* TegStoryboardNames.swift in Sources */,
@@ -726,34 +548,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EADD0E21B295D27003684AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EADD1201B295FA4003684AC /* TegDownloaderSession.swift in Sources */,
-				7EADD1231B295FA4003684AC /* TegHttpMethod.swift in Sources */,
-				7EADD12C1B296019003684AC /* TegQ.swift in Sources */,
-				7EADD1241B295FA4003684AC /* TegHttpRequestIdentity.swift in Sources */,
-				7EADD1271B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift in Sources */,
-				7EADD1211B295FA4003684AC /* TegHttpContentType.swift in Sources */,
-				7EADD11E1B295FA4003684AC /* TegDownloaderMainQueue.swift in Sources */,
-				7EADD1221B295FA4003684AC /* TegHttpHeader.swift in Sources */,
-				7EADD12E1B29603B003684AC /* TegString.swift in Sources */,
-				7EADD11F1B295FA4003684AC /* TegHttpErrors.swift in Sources */,
-				7EADD1261B295FA4003684AC /* TegHttpText.swift in Sources */,
-				7EADD1251B295FA4003684AC /* TegHttpSensitiveText.swift in Sources */,
-				7EADD11D1B295FA4003684AC /* TegDownloaderAsync.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EADD0ED1B295D27003684AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EADD0F91B295D27003684AC /* MprHttpTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -761,11 +555,6 @@
 			isa = PBXTargetDependency;
 			target = 7EADD0BA1B295BCC003684AC /* FitLoader */;
 			targetProxy = 7EADD0C81B295BCC003684AC /* PBXContainerItemProxy */;
-		};
-		7EADD0F41B295D27003684AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EADD0E61B295D27003684AC /* MprHttp */;
-			targetProxy = 7EADD0F31B295D27003684AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -971,77 +760,6 @@
 			};
 			name = Release;
 		};
-		7EADD0FB1B295D27003684AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MprHttp/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		7EADD0FC1B295D27003684AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MprHttp/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7EADD0FE1B295D27003684AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MprHttpTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		7EADD0FF1B295D27003684AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MprHttpTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1076,24 +794,6 @@
 			buildConfigurations = (
 				7EADD0D51B295BCC003684AC /* Debug */,
 				7EADD0D61B295BCC003684AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EADD0FA1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EADD0FB1B295D27003684AC /* Debug */,
-				7EADD0FC1B295D27003684AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EADD0FD1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttpTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EADD0FE1B295D27003684AC /* Debug */,
-				7EADD0FF1B295D27003684AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

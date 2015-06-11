@@ -1,1 +1,2 @@
 github "exchangegroup/Dodo" ~> 1.0
+github "exchangegroup/MprHttp" ~> 1.0

@@ -68,7 +68,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   }
 
   /// Reloads failed request from a reachable view controller, if any.
-  func reloadOldFailedRequest(viewController: UIViewController) {
+  public func reloadOldFailedRequest(viewController: UIViewController) {
     if let reachableViewController = viewController as? TegReachableViewController {
       failedReachableViewController = reachableViewController
       reloadFailedRequestAndUpdateStatusMessage()
