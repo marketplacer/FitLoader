@@ -4,6 +4,6 @@
 
 import UIKit
 
-class TegMockedNSUrlSessionDataTask: NSURLSessionDataTask {
-  override func cancel() { }
+public class TegMockedNSUrlSessionDataTask: NSURLSessionDataTask {
+  override public func cancel() { }
 }

@@ -1,3 +1,5 @@
+import Foundation
+
 public struct TegReachabilityConstants {
     public static var errorMessages = TegReachabilityErrorMessages()
 }

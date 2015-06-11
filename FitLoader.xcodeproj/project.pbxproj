@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7EADD0C11B295BCC003684AC /* FitLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD0C01B295BCC003684AC /* FitLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EADD0C71B295BCC003684AC /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
-		7EADD0CE1B295BCC003684AC /* FitLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0CD1B295BCC003684AC /* FitLoaderTests.swift */; };
 		7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D71B295C03003684AC /* TegReachability.swift */; };
 		7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */; };
 		7EADD0DD1B295C03003684AC /* TegReachabilityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */; };
@@ -22,7 +20,6 @@
 		7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */; };
 		7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1031B295D60003684AC /* TegReachableViewController.swift */; };
 		7EADD10C1B295D84003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
-		7EADD10D1B295D84003684AC /* README_reachability in Resources */ = {isa = PBXBuildFile; fileRef = 7EADD10A1B295D84003684AC /* README_reachability */; };
 		7EADD1111B295F88003684AC /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD1081B295D84003684AC /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EADD11D1B295FA4003684AC /* TegDownloaderAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */; };
 		7EADD11E1B295FA4003684AC /* TegDownloaderMainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */; };
@@ -38,6 +35,34 @@
 		7EADD12C1B296019003684AC /* TegQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12B1B296019003684AC /* TegQ.swift */; };
 		7EADD12E1B29603B003684AC /* TegString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12D1B29603B003684AC /* TegString.swift */; };
 		7EADD1311B296089003684AC /* MprHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E71B295D27003684AC /* MprHttp.framework */; };
+		7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */; };
+		7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1341B296866003684AC /* LyoutGuideMock.swift */; };
+		7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1351B296866003684AC /* TegHttpTextMock.swift */; };
+		7EADD13A1B296866003684AC /* ReachabilityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1361B296866003684AC /* ReachabilityMock.swift */; };
+		7EADD13C1B296874003684AC /* TegReachabilityLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */; };
+		7EADD13E1B296921003684AC /* TegReachabilityAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1011B295D60003684AC /* TegReachabilityAuthentication.swift */; };
+		7EADD13F1B296921003684AC /* TegReachabilityMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */; };
+		7EADD1401B296921003684AC /* TegReachableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1031B295D60003684AC /* TegReachableViewController.swift */; };
+		7EADD1411B296924003684AC /* TegReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D71B295C03003684AC /* TegReachability.swift */; };
+		7EADD1421B296924003684AC /* TegReachabilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */; };
+		7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */; };
+		7EADD1441B296924003684AC /* TegReachabilityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */; };
+		7EADD1451B296951003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
+		7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
+		7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
+		7EEC33281B296EA0000C3DE0 /* TegDownloaderAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1121B295FA4003684AC /* TegDownloaderAsync.swift */; };
+		7EEC33291B296EA0000C3DE0 /* TegDownloaderMainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1131B295FA4003684AC /* TegDownloaderMainQueue.swift */; };
+		7EEC332A1B296EA0000C3DE0 /* TegHttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1141B295FA4003684AC /* TegHttpErrors.swift */; };
+		7EEC332B1B296EA0000C3DE0 /* TegDownloaderSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1151B295FA4003684AC /* TegDownloaderSession.swift */; };
+		7EEC332C1B296EA0000C3DE0 /* TegHttpContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1161B295FA4003684AC /* TegHttpContentType.swift */; };
+		7EEC332D1B296EA0000C3DE0 /* TegHttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1171B295FA4003684AC /* TegHttpHeader.swift */; };
+		7EEC332E1B296EA0000C3DE0 /* TegHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1181B295FA4003684AC /* TegHttpMethod.swift */; };
+		7EEC332F1B296EA0000C3DE0 /* TegHttpRequestIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1191B295FA4003684AC /* TegHttpRequestIdentity.swift */; };
+		7EEC33301B296EA0000C3DE0 /* TegHttpSensitiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11A1B295FA4003684AC /* TegHttpSensitiveText.swift */; };
+		7EEC33311B296EA0000C3DE0 /* TegHttpText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11B1B295FA4003684AC /* TegHttpText.swift */; };
+		7EEC33321B296EA0000C3DE0 /* TegMockedNSUrlSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */; };
+		7EEC33331B296EA5000C3DE0 /* TegQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12B1B296019003684AC /* TegQ.swift */; };
+		7EEC33341B296EA5000C3DE0 /* TegString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD12D1B29603B003684AC /* TegString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +95,6 @@
 		7EADD0C01B295BCC003684AC /* FitLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FitLoader.h; sourceTree = "<group>"; };
 		7EADD0C61B295BCC003684AC /* FitLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EADD0CC1B295BCC003684AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EADD0CD1B295BCC003684AC /* FitLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLoaderTests.swift; sourceTree = "<group>"; };
 		7EADD0D71B295C03003684AC /* TegReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachability.swift; sourceTree = "<group>"; };
 		7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityConstants.swift; sourceTree = "<group>"; };
 		7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityMessage.swift; sourceTree = "<group>"; };
@@ -101,6 +125,11 @@
 		7EADD11C1B295FA4003684AC /* TegMockedNSUrlSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegMockedNSUrlSessionDataTask.swift; sourceTree = "<group>"; };
 		7EADD12B1B296019003684AC /* TegQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegQ.swift; sourceTree = "<group>"; };
 		7EADD12D1B29603B003684AC /* TegString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegString.swift; sourceTree = "<group>"; };
+		7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachableViewControllerMock.swift; sourceTree = "<group>"; };
+		7EADD1341B296866003684AC /* LyoutGuideMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyoutGuideMock.swift; sourceTree = "<group>"; };
+		7EADD1351B296866003684AC /* TegHttpTextMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegHttpTextMock.swift; sourceTree = "<group>"; };
+		7EADD1361B296866003684AC /* ReachabilityMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityMock.swift; sourceTree = "<group>"; };
+		7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EADD0C71B295BCC003684AC /* FitLoader.framework in Frameworks */,
+				7EEC33211B296C8B000C3DE0 /* FitLoader.framework in Frameworks */,
+				7EEC33251B296DB1000C3DE0 /* Dodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +218,8 @@
 		7EADD0CA1B295BCC003684AC /* FitLoaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EADD0CD1B295BCC003684AC /* FitLoaderTests.swift */,
+				7EADD1321B296860003684AC /* Mocks */,
+				7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */,
 				7EADD0CB1B295BCC003684AC /* Supporting Files */,
 			);
 			path = FitLoaderTests;
@@ -285,6 +316,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		7EADD1321B296860003684AC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */,
+				7EADD1341B296866003684AC /* LyoutGuideMock.swift */,
+				7EADD1351B296866003684AC /* TegHttpTextMock.swift */,
+				7EADD1361B296866003684AC /* ReachabilityMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -316,6 +358,7 @@
 				7EADD0B71B295BCC003684AC /* Frameworks */,
 				7EADD0B81B295BCC003684AC /* Headers */,
 				7EADD0B91B295BCC003684AC /* Resources */,
+				7EEC33261B296E03000C3DE0 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +377,7 @@
 				7EADD0C21B295BCC003684AC /* Sources */,
 				7EADD0C31B295BCC003684AC /* Frameworks */,
 				7EADD0C41B295BCC003684AC /* Resources */,
+				7EEC33271B296E2D000C3DE0 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -429,7 +473,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EADD10D1B295D84003684AC /* README_reachability in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,18 +499,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EEC33261B296E03000C3DE0 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework";
+		};
+		7EEC33271B296E2D000C3DE0 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "$(SRCROOT)/Carthage/Build/iOS/Dodo.framework";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7EADD0B61B295BCC003684AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEC332B1B296EA0000C3DE0 /* TegDownloaderSession.swift in Sources */,
+				7EEC33311B296EA0000C3DE0 /* TegHttpText.swift in Sources */,
+				7EEC33331B296EA5000C3DE0 /* TegQ.swift in Sources */,
+				7EEC33301B296EA0000C3DE0 /* TegHttpSensitiveText.swift in Sources */,
 				7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */,
 				7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */,
+				7EEC332E1B296EA0000C3DE0 /* TegHttpMethod.swift in Sources */,
 				7EADD10C1B295D84003684AC /* Reachability.m in Sources */,
+				7EEC332A1B296EA0000C3DE0 /* TegHttpErrors.swift in Sources */,
 				7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
 				7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */,
+				7EEC33321B296EA0000C3DE0 /* TegMockedNSUrlSessionDataTask.swift in Sources */,
+				7EEC332D1B296EA0000C3DE0 /* TegHttpHeader.swift in Sources */,
+				7EEC33341B296EA5000C3DE0 /* TegString.swift in Sources */,
 				7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */,
+				7EEC332F1B296EA0000C3DE0 /* TegHttpRequestIdentity.swift in Sources */,
+				7EEC332C1B296EA0000C3DE0 /* TegHttpContentType.swift in Sources */,
 				7EADD0DE1B295C03003684AC /* TegReachabilityLoader.swift in Sources */,
+				7EEC33281B296EA0000C3DE0 /* TegDownloaderAsync.swift in Sources */,
+				7EEC33291B296EA0000C3DE0 /* TegDownloaderMainQueue.swift in Sources */,
 				7EADD0DD1B295C03003684AC /* TegReachabilityMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +563,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EADD0CE1B295BCC003684AC /* FitLoaderTests.swift in Sources */,
+				7EADD1451B296951003684AC /* Reachability.m in Sources */,
+				7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */,
+				7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */,
+				7EADD1401B296921003684AC /* TegReachableViewController.swift in Sources */,
+				7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */,
+				7EADD13A1B296866003684AC /* ReachabilityMock.swift in Sources */,
+				7EADD13E1B296921003684AC /* TegReachabilityAuthentication.swift in Sources */,
+				7EADD13C1B296874003684AC /* TegReachabilityLoaderTests.swift in Sources */,
+				7EADD13F1B296921003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
+				7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */,
+				7EADD1411B296924003684AC /* TegReachability.swift in Sources */,
+				7EADD1441B296924003684AC /* TegReachabilityLoader.swift in Sources */,
+				7EADD1421B296924003684AC /* TegReachabilityConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +764,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -673,6 +773,7 @@
 				INFOPLIST_FILE = FitLoaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FitLoader/FitLoader.h;
 			};
 			name = Debug;
 		};
@@ -682,10 +783,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FitLoaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FitLoader/FitLoader.h;
 			};
 			name = Release;
 		};
@@ -779,6 +882,7 @@
 				7EADD0D31B295BCC003684AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EADD0D41B295BCC003684AC /* Build configuration list for PBXNativeTarget "FitLoaderTests" */ = {
 			isa = XCConfigurationList;
@@ -787,6 +891,7 @@
 				7EADD0D61B295BCC003684AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EADD0FA1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttp" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +900,7 @@
 				7EADD0FC1B295D27003684AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EADD0FD1B295D27003684AC /* Build configuration list for PBXNativeTarget "MprHttpTests" */ = {
 			isa = XCConfigurationList;
@@ -803,6 +909,7 @@
 				7EADD0FF1B295D27003684AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
