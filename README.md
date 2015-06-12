@@ -19,21 +19,20 @@ There are three types of network issues that this library detects:
 
 Occurs when device can not reach Internet host. The app displays "No Internet connection" message at the bottom of the screen. When internet connection becomes available this library automatically resends the HTTP request.
 
-<img src='https://dl.dropboxusercontent.com/u/11143285/bikeexchange/reachability_notification/reachability-notification.png' alt='reachability ios' width='320'>
+<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/fit_loader_no_internet.png' alt='No Internet connection' width='250'>
 
 #### 2. Request failure
 
 This error is shown if device is connected to the Internet but still can not send or receive an HTTP request for various reasons (server error, for example). In this case the app shows "Connection error" message with a refresh button.
 
-<img src='https://dl.dropboxusercontent.com/u/11143285/bikeexchange/reachability_notification/reachability-notification-2.png' alt='reachability ios' width='320'>
+<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/fit_loader_connection_error.png' alt='Connection error' width='250'>
 
 #### 3. Known error
 
 The server can send a response with HTTP status 422. The body test of the response will be presented to the
 user in a message bar with a close button.
 
-
-
+<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/filt_loader_error_422.png' alt='Custom error 422' width='250'>
 
 
 ## Handling custom errors
