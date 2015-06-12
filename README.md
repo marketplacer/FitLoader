@@ -2,7 +2,11 @@
 
 This is an iOS library and a demo app. The library is made for sending HTTP requests that can handle network connection problems.
 
-There are three types of connection problem that this library detects: no internet connection, request failure and a known error.
+There are three types of connection problem that this library detects:
+
+1. No Internet connection.
+1. Request failure.
+1. A known error with HTTP status code 422.
 
 ### 1. No Internet connection
 
