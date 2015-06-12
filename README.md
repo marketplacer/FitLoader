@@ -1,8 +1,6 @@
 # HTTP loader control for iOS
 
-This is an iOS library and a demo app. The library is made for sending HTTP requests that can handle network connection problems.
-
-There are three types of connection problem that this library detects:
+This library sends HTTP requests and notifies user in case of a network issue. There are three types of network issues that this library detects:
 
 1. No Internet connection.
 1. Request failure.
