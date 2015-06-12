@@ -1,8 +1,8 @@
-# iOS reachability control written in Swift
+# HTTP loader control for iOS
 
 This is an iOS library and a demo app. The library is made for sending HTTP requests that can handle network connection problems.
 
-There are two types of connection problem that this library detects: no internet connection and request failure.
+There are three types of connection problem that this library detects: no internet connection, request failure and a known error.
 
 ### 1. No Internet connection
 
@@ -15,6 +15,11 @@ Occurs when device can not reach Internet host. The app displays "No Internet co
 This error is shown if device is connected to the Internet but still can not send or receive an HTTP request for various reasons (server error, for example). In this case the app shows "Connection error" message with a refresh button.
 
 <img src='https://dl.dropboxusercontent.com/u/11143285/bikeexchange/reachability_notification/reachability-notification-2.png' alt='reachability ios' width='320'>
+
+### 3. Known error
+
+The server can send a response with HTTP status 422. The body test of the response will be presented to the
+user in a message bar with a close button.
 
 ## Handling custom errors
 
