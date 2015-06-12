@@ -1,27 +1,40 @@
 # HTTP loader control for iOS
 
-This library sends HTTP requests and notifies user in case of a network issue. There are three types of network issues that this library detects:
+This library sends HTTP requests and notifies user in case of a network issue.
+
+## Setup with Carthage
+
+Add `github "exchangegroup/FitLoader" ~> 1.0` to your Cartfile and run `carthage update`.
+
+
+## How it works
+
+There are three types of network issues that this library detects:
 
 1. No Internet connection.
 1. Request failure.
 1. A known error with HTTP status code 422.
 
-### 1. No Internet connection
+#### 1. No Internet connection
 
 Occurs when device can not reach Internet host. The app displays "No Internet connection" message at the bottom of the screen. When internet connection becomes available this library automatically resends the HTTP request.
 
 <img src='https://dl.dropboxusercontent.com/u/11143285/bikeexchange/reachability_notification/reachability-notification.png' alt='reachability ios' width='320'>
 
-### 2. Request failure
+#### 2. Request failure
 
 This error is shown if device is connected to the Internet but still can not send or receive an HTTP request for various reasons (server error, for example). In this case the app shows "Connection error" message with a refresh button.
 
 <img src='https://dl.dropboxusercontent.com/u/11143285/bikeexchange/reachability_notification/reachability-notification-2.png' alt='reachability ios' width='320'>
 
-### 3. Known error
+#### 3. Known error
 
 The server can send a response with HTTP status 422. The body test of the response will be presented to the
 user in a message bar with a close button.
+
+
+
+
 
 ## Handling custom errors
 
