@@ -51,14 +51,11 @@ class TegReachabilityLoaderTests: XCTestCase {
   }
   
   func testShowKnownError422() {
-    var actualBodyText = ""
-    
     let loader = TegReachabilityLoader(httpText: httpTextMock,
       requestIdentity: identity,
       viewController: viewControllerMock,
       authentication: nil,
       onSuccess: { text in
-        actualBodyText = text
         return true
       }
     )
@@ -112,7 +109,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     )
     
     loader.startLoading()
-    reachabilityMock.currentReachabilityStatusMock = NetworkStatus(NotReachable.value)
+    reachabilityMock.currentReachabilityStatusMock = NetworkStatus(NotReachable.rawValue)
     httpTextMock.simulateError(500, bodyTest: "Server error")
     
     XCTAssert(dodoMock.results.visible)

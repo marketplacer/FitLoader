@@ -26,7 +26,7 @@ public class TegReachabilityLoader {
   // Custom error handler.
   // If it returns true it means the error is handled and no error messages are shown
   // If it returns false - it shows the normal error messages.
-  public var onError: ((NSError, NSHTTPURLResponse?, String?)->(Bool))?
+  public var onError: ((NSError?, NSHTTPURLResponse?, String?)->(Bool))?
   
   // The top view of the view controller will contain an error message view
   public weak var reachableViewController: TegReachableViewController?
@@ -100,7 +100,7 @@ public class TegReachabilityLoader {
     return true
   }
   
-  private func handleError(error: NSError, response: NSHTTPURLResponse?, bodyText: String?) {
+  private func handleError(error: NSError?, response: NSHTTPURLResponse?, bodyText: String?) {
     if let onError = onError {
       if onError(error, response, bodyText) { return }
     }
@@ -118,14 +118,12 @@ public class TegReachabilityLoader {
       return
     }
     
-    let unexpectedResponse = error.code == TegHttpError.UnexpectedResponse.rawValue
-    
     if let reachableViewController = reachableViewController {
       reachableViewController.failedLoader = self
       
       var errorMessage = TegReachabilityConstants.errorMessages.unknownNetworkError
       
-      if error.code == TegHttpError.UnexpectedResponse.rawValue {
+      if error?.code == TegHttpError.UnexpectedResponse.rawValue {
         errorMessage = TegReachabilityConstants.errorMessages.unexpectedResponse
       }
       

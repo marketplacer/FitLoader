@@ -48,8 +48,6 @@ class TegReachabilityMessage {
         }
       case .Close:
         view.dodo.style.leftButton.hideOnTap = true
-      default:
-        let nevermind = true
       }
     }
       

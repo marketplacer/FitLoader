@@ -10,7 +10,7 @@ import MprHttp
 class TegHttpTextMock: TegHttpText {
   
   private var onSuccess: ((String)->())?
-  private var onError: ((NSError, NSHTTPURLResponse?, String?)->())?
+  private var onError: ((NSError?, NSHTTPURLResponse?, String?)->())?
   private var onAlways: (()->())?
 
   var identity = TegHttpRequestIdentity(url: "unused")
@@ -29,7 +29,7 @@ class TegHttpTextMock: TegHttpText {
   
   override func load(identity: TegHttpRequestIdentity,
     onSuccess: (String)->(),
-    onError: ((NSError, NSHTTPURLResponse?, String?)->())? = nil,
+    onError: ((NSError?, NSHTTPURLResponse?, String?)->())? = nil,
     onAlways: (()->())? = nil) -> NSURLSessionDataTask? {
       
     self.identity = identity
@@ -43,7 +43,7 @@ class TegHttpTextMock: TegHttpText {
     return TegMockedNSUrlSessionDataTask()
   }
   
-  func simulateSuccessfulResponse(#bodyText: String) {
+  func simulateSuccessfulResponse(bodyText bodyText: String) {
     onAlways?()
     
     onSuccess?(bodyText)
@@ -57,7 +57,7 @@ class TegHttpTextMock: TegHttpText {
       HTTPVersion: nil,
       headerFields: nil)
     
-    onError?(NSError(), response, bodyText)
+    onError?(nil, response, bodyText)
   }
   
   func simulateError(httpStatusCode: Int, bodyTest: String?, error: NSError? = nil) {
@@ -68,7 +68,7 @@ class TegHttpTextMock: TegHttpText {
       HTTPVersion: nil,
       headerFields: nil)
     
-    onError?(error ?? NSError(), response, bodyTest)
+    onError?(error, response, bodyTest)
   }
 
   func simulateError_unauthorized401() {
@@ -79,10 +79,10 @@ class TegHttpTextMock: TegHttpText {
       HTTPVersion: nil,
       headerFields: nil)
     
-    onError?(NSError(), response, nil)
+    onError?(nil, response, nil)
   }
   
   private func log() {
-    println("HTTP \(httpMethod.rawValue) MOCKED \(url)")
+    print("HTTP \(httpMethod.rawValue) MOCKED \(url)")
   }
 }

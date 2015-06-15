@@ -32,7 +32,7 @@ public class TegAuthenticatedLoader: TegReachabilityLoader {
     self.delegate = delegate
   }
 
-  private func handleError(error: NSError, response: NSHTTPURLResponse?, bodyText: String?) -> Bool {
+  private func handleError(error: NSError?, response: NSHTTPURLResponse?, bodyText: String?) -> Bool {
 
     // Show login screen if reponse status code is 401
     if let response = response,
