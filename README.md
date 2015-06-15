@@ -4,7 +4,7 @@ This library sends HTTP requests and notifies user in case of a network issue.
 
 ## Setup with Carthage
 
-Add `github "exchangegroup/FitLoader" ~> 1.0` to your Cartfile and run `carthage update`.
+Add `github "exchangegroup/FitLoader" ~> 2.0` to your Cartfile and run `carthage update`.
 
 
 ## How it works
