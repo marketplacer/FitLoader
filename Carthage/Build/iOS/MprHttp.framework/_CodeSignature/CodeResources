@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MprHttp-Swift.h</key>
 		<data>
-		YALFq4rL9nsJYeprLf83ZVYqX5w=
+		IbYdbXEgICiv3TjkfTrest4bHDs=
 		</data>
 		<key>Headers/MprHttp.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+Gz+O2EXm4BVBZ5R/DVJ02GjznM=
+		rK/YPiUWep/pQUrgJOLpEyjkGHQ=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm.swiftdoc</key>
 		<data>
-		bz3s184EzvgG9kRqA5i8HDI9Hrc=
+		GbkW1XULXMI69fgHMBrJNLaZJSQ=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm.swiftmodule</key>
 		<data>
-		AoLGIUTE6RGn/h/c9pZQ7M8kFQ0=
+		LXt0L9M+vvbChjWvR1DuHpO0fZI=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		EWKH8Fbk5tyBBY81jxNY63VAHgw=
+		6pz7VI1CGXEKRAkXy0357MIcduI=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		b7WwPzJrODwkYYfxbqgDK09mfW4=
+		ypOMPCnvS5xD3EoenkFhiRC/awY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -41,7 +41,7 @@
 	<dict>
 		<key>Headers/MprHttp-Swift.h</key>
 		<data>
-		YALFq4rL9nsJYeprLf83ZVYqX5w=
+		IbYdbXEgICiv3TjkfTrest4bHDs=
 		</data>
 		<key>Headers/MprHttp.h</key>
 		<data>
@@ -49,19 +49,19 @@
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm.swiftdoc</key>
 		<data>
-		bz3s184EzvgG9kRqA5i8HDI9Hrc=
+		GbkW1XULXMI69fgHMBrJNLaZJSQ=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm.swiftmodule</key>
 		<data>
-		AoLGIUTE6RGn/h/c9pZQ7M8kFQ0=
+		LXt0L9M+vvbChjWvR1DuHpO0fZI=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		EWKH8Fbk5tyBBY81jxNY63VAHgw=
+		6pz7VI1CGXEKRAkXy0357MIcduI=
 		</data>
 		<key>Modules/MprHttp.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		b7WwPzJrODwkYYfxbqgDK09mfW4=
+		ypOMPCnvS5xD3EoenkFhiRC/awY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

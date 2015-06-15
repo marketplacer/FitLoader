@@ -5,7 +5,7 @@ enum TegViewControllerNames: String {
 
   var storyboardName: TegStoryboardNames {
     for (storyboardName, viewControllerNames) in TegStoryboardNames.viewControllers {
-      if contains(viewControllerNames, self) { return storyboardName }
+      if viewControllerNames.contains(self) { return storyboardName }
     }
     
     return TegStoryboardNames.Main

@@ -35,7 +35,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   private var hasInternetConnection: Bool {
     if let reachability = reachability {
       let status = reachability.currentReachabilityStatus()
-      return status.value != NotReachable.value
+      return status.rawValue != NotReachable.rawValue
     }
 
     return false
