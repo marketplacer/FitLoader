@@ -29,10 +29,17 @@ This error is shown if device is connected to the Internet but still can not sen
 
 #### 3. Known error
 
-The server can send a response with HTTP status 422. The body test of the response will be presented to the
-user in a message bar with a close button.
+The server can send a response with HTTP status 422. If the body text is in the following JSON format it will be presented to the user in a message bar with a close button. If format is different, a 'Connection error' message will be shown.
 
 <img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/filt_loader_error_422.png' alt='Custom error 422' width='250'>
+
+##### Known error JSON response format
+
+```JSON
+{
+  "knownErrorText": "It is error only, and not truth, that shrinks from inquiry."
+}
+```
 
 
 ## Handling custom errors
