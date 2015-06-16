@@ -48,6 +48,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     httpTextMock.simulateSuccessfulResponse(bodyText: "🐳")
     
     XCTAssertEqual("🐳", actualBodyText)
+    XCTAssert(viewControllerMock.failedLoader === nil)
   }
   
   func testShowKnownError422() {
@@ -61,11 +62,12 @@ class TegReachabilityLoaderTests: XCTestCase {
     )
     
     loader.startLoading()
-    httpTextMock.simulateError_unprocessableEntity422("📵")
+    httpTextMock.simulateError_unprocessableEntity422("{ \"knownErrorText\": \"📵\" }")
     
     XCTAssert(dodoMock.results.visible)
     XCTAssertEqual(1, dodoMock.results.total)
     XCTAssertEqual("📵", dodoMock.results.errors[0])
+    XCTAssert(viewControllerMock.failedLoader === loader)
   }
   
   func testShowUnknownNetworkError() {
@@ -82,6 +84,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssert(dodoMock.results.visible)
     XCTAssertEqual(1, dodoMock.results.total)
     XCTAssertEqual("Connection error", dodoMock.results.errors[0])
+    XCTAssert(viewControllerMock.failedLoader === loader)
   }
   
   func testShowUnexpectedResponseError() {
@@ -98,6 +101,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssert(dodoMock.results.visible)
     XCTAssertEqual(1, dodoMock.results.total)
     XCTAssertEqual("Unexpected response", dodoMock.results.errors[0])
+    XCTAssert(viewControllerMock.failedLoader === loader)
   }
   
   func testShowNoInternetError() {
@@ -115,5 +119,6 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssert(dodoMock.results.visible)
     XCTAssertEqual(1, dodoMock.results.total)
     XCTAssertEqual("No Internet connection", dodoMock.results.errors[0])
+    XCTAssert(viewControllerMock.failedLoader === loader)
   }
 }

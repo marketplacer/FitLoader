@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2D6B5C1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */; };
+		7E2D6B5E1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */; };
+		7E2D6B5F1B2FD90C00DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */; };
 		7E7361561B2A42C0007BD5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7361551B2A42C0007BD5EF /* AppDelegate.swift */; };
 		7E73615D1B2A42C0007BD5EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E73615C1B2A42C0007BD5EF /* Images.xcassets */; };
 		7E7361601B2A42C0007BD5EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E73615E1B2A42C0007BD5EF /* LaunchScreen.xib */; };
@@ -119,6 +122,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityKnownErrorMessageTests.swift; sourceTree = "<group>"; };
+		7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityKnownErrorMessage.swift; sourceTree = "<group>"; };
 		7E7361511B2A42C0007BD5EF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7361541B2A42C0007BD5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7361551B2A42C0007BD5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +308,7 @@
 				7EADD1001B295D59003684AC /* Protocols */,
 				7EADD0D71B295C03003684AC /* TegReachability.swift */,
 				7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */,
+				7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */,
 				7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */,
 				7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */,
 				7EADD0C01B295BCC003684AC /* FitLoader.h */,
@@ -324,6 +330,7 @@
 			children = (
 				7EADD1321B296860003684AC /* Mocks */,
 				7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */,
+				7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */,
 				7EADD0CB1B295BCC003684AC /* Supporting Files */,
 			);
 			path = FitLoaderTests;
@@ -588,6 +595,7 @@
 				7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */,
 				7EADD0DE1B295C03003684AC /* TegReachabilityLoader.swift in Sources */,
 				7EADD0DD1B295C03003684AC /* TegReachabilityMessage.swift in Sources */,
+				7E2D6B5E1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +610,8 @@
 				7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */,
 				7EADD13A1B296866003684AC /* ReachabilityMock.swift in Sources */,
 				7EADD13E1B296921003684AC /* TegReachabilityAuthentication.swift in Sources */,
+				7E2D6B5C1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift in Sources */,
+				7E2D6B5F1B2FD90C00DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */,
 				7EADD13C1B296874003684AC /* TegReachabilityLoaderTests.swift in Sources */,
 				7EADD13F1B296921003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
 				7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */,

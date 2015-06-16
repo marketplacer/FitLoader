@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zN-sD-qu7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zN-sD-qu7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +21,7 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Rm0-zq-65N">
                                 <rect key="frame" x="285" y="290" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLc-As-ZpC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLc-As-ZpC">
                                 <rect key="frame" x="16" y="114" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -55,7 +56,7 @@
         <!--Text View Controller-->
         <scene sceneID="F2a-9e-nyM">
             <objects>
-                <viewController id="O9s-OL-MsX" customClass="TextViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="O9s-OL-MsX" customClass="TextViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iOT-5X-Tj8"/>
                         <viewControllerLayoutGuide type="bottom" id="d9d-70-qdt"/>
@@ -64,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-UH-Mh9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-UH-Mh9">
                                 <rect key="frame" x="16" y="114" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -102,7 +103,7 @@
         <!--Error422 View Controller-->
         <scene sceneID="wFX-ZI-tQ6">
             <objects>
-                <viewController id="hkE-Yx-54e" customClass="Error422ViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hkE-Yx-54e" customClass="Error422ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="73R-jr-DrX"/>
                         <viewControllerLayoutGuide type="bottom" id="3ep-PI-whL"/>
@@ -115,8 +116,8 @@
                                 <rect key="frame" x="290" y="290" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-TU-0DS">
-                                <rect key="frame" x="8" y="114" width="584" height="61"/>
-                                <string key="text">This screen is for handling error message with HTTP status code 422.  It simply shows the error message body in the message bar.</string>
+                                <rect key="frame" x="12" y="214" width="576" height="81.5"/>
+                                <string key="text">This screen is for handling a known error.  Known error is an HTTP response with status code 422. Response contains error message text in a specific JSON format.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,7 +126,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OWr-TU-0DS" firstAttribute="leadingMargin" secondItem="GIC-G0-U6Z" secondAttribute="leadingMargin" id="1zP-Ab-iHi"/>
-                            <constraint firstItem="OWr-TU-0DS" firstAttribute="top" secondItem="73R-jr-DrX" secondAttribute="bottom" constant="50" id="KyI-v0-iq1"/>
+                            <constraint firstItem="OWr-TU-0DS" firstAttribute="top" secondItem="73R-jr-DrX" secondAttribute="bottom" constant="150" id="KyI-v0-iq1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OWr-TU-0DS" secondAttribute="trailingMargin" id="Lrt-lH-QMz"/>
                             <constraint firstAttribute="centerX" secondItem="2eH-qw-eqZ" secondAttribute="centerX" id="MOS-rB-bLK"/>
                             <constraint firstAttribute="centerY" secondItem="2eH-qw-eqZ" secondAttribute="centerY" id="aeG-42-ifb"/>
@@ -161,7 +162,7 @@
         <!--Answer View Controller-->
         <scene sceneID="Tja-cu-J4T">
             <objects>
-                <viewController id="Vb7-LH-oYb" customClass="AnswerViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vb7-LH-oYb" customClass="AnswerViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ew-vH-A71"/>
                         <viewControllerLayoutGuide type="bottom" id="Okf-oL-T9i"/>
@@ -170,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-e8-e2R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-e8-e2R">
                                 <rect key="frame" x="16" y="114" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -208,7 +209,7 @@
         <!--My Account View Controller-->
         <scene sceneID="7cr-S1-xB2">
             <objects>
-                <viewController id="9sM-qy-miA" customClass="MyAccountViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9sM-qy-miA" customClass="MyAccountViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G2M-4S-rxQ"/>
                         <viewControllerLayoutGuide type="bottom" id="sZ8-G9-Q5h"/>
@@ -247,7 +248,7 @@
         <!--Login View Controller-->
         <scene sceneID="Vah-tr-YR5">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="m15-Gz-iF2" customClass="LoginViewController" customModule="reachability_notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="m15-Gz-iF2" customClass="LoginViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQa-uj-UbO"/>
                         <viewControllerLayoutGuide type="bottom" id="cPh-eD-fgQ"/>
@@ -256,7 +257,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-ch-Asq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-ch-Asq">
                                 <rect key="frame" x="271" y="138" width="59" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Login">
@@ -266,7 +267,7 @@
                                     <action selector="onLoginTapped:" destination="m15-Gz-iF2" eventType="touchUpInside" id="YYA-W7-7s0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjw-Bk-9ZM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjw-Bk-9ZM">
                                 <rect key="frame" x="264" y="220" width="73" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Cancel">
@@ -276,7 +277,7 @@
                                     <action selector="onCancelTapped:" destination="m15-Gz-iF2" eventType="touchUpInside" id="1qH-g7-Gd1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-L3-EV6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Authentication" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-L3-EV6">
                                 <rect key="frame" x="222" y="67" width="157" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

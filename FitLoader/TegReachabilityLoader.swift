@@ -102,25 +102,52 @@ public class TegReachabilityLoader {
   
   private func handleError(error: NSError?, response: NSHTTPURLResponse?, bodyText: String?) {
     if let onError = onError {
-      if onError(error, response, bodyText) { return }
+      if onError(error, response, bodyText) {
+        // Error is handled by the callback
+        return
+      }
     }
     
     downloadTask = nil
     
-    // Handle known error with status 422 from server.
-    // The the body text
-    if let response = response,
-      reachableViewController = reachableViewController
-      where response.statusCode == 422 {
-      
-      reachableViewController.failedLoader = self
-      TegReachability.shared.showError422(reachableViewController, bodyText: bodyText)
-      return
-    }
-    
+    // Save this loader as failed loader so the request can be repeated.
     if let reachableViewController = reachableViewController {
       reachableViewController.failedLoader = self
-      
+    }
+    
+    if showKnownErrorMessage(response, bodyText: bodyText) { return }
+    
+    showUnknownErrorMessage(error)
+  }
+  
+  /**
+
+  Shown the known error message.
+  Known error is an error response with HTTP status 422 and a specific body in JSON format
+  
+  - returns: true if known error is handled
+  
+  */
+  private func showKnownErrorMessage(response: NSHTTPURLResponse?, bodyText: String?) -> Bool {
+    if let response = response,
+      bodyText = bodyText,
+      reachableViewController = reachableViewController,
+      knownErrorMessage = TegReachabilityKnownErrorMessage.parse(bodyText, response: response) {
+        
+      TegReachability.shared.showError422(reachableViewController, bodyText: knownErrorMessage)
+      return true
+    }
+    
+    return false
+  }
+  
+  /**
+  
+  Shows error message for unknown type of network error.
+  
+  */
+  private func showUnknownErrorMessage(error: NSError?) {
+    if let reachableViewController = reachableViewController {
       var errorMessage = TegReachabilityConstants.errorMessages.unknownNetworkError
       
       if error?.code == TegHttpError.UnexpectedResponse.rawValue {

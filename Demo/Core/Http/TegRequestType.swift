@@ -12,7 +12,7 @@ public enum TegRequestType: String {
   case MyAccount = "401"
   case MyAccountAuthenticated = "u/11143285/bikeexchange/reachability_notification/my_account.txt"
   case Text = "u/11143285/bikeexchange/reachability_notification/text.txt"
-  case Error422 = "422"
+  case Error422 = "api/v1/demo/known_error"
 
   var httpMethod: TegHttpMethod {
     return TegRequestTypeHttpMethod.method(self)

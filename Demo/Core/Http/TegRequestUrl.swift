@@ -8,8 +8,10 @@ public struct TegRequestUrl {
 
   private func host(type: TegRequestType) -> String {
     switch type {
-    case .MyAccount, .Error422:
+    case .MyAccount:
       return "http://httpstat.us"
+    case .Error422:
+      return "http://52.64.108.107:3000"
     default:
       return "https://dl.dropboxusercontent.com"
     }
