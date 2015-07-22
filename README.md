@@ -17,7 +17,7 @@ There are three types of network issues that this library detects:
 
 #### 1. No Internet connection
 
-Occurs when device can not reach Internet host. The app displays "No Internet connection" message at the bottom of the screen. When internet connection becomes available this library automatically resends the HTTP request.
+Occurs when device can not reach Internet host. The app displays "No Internet connection" message. When internet connection becomes available this library automatically resends the HTTP request.
 
 <img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/fit_loader_no_internet.png' alt='No Internet connection' width='250'>
 
