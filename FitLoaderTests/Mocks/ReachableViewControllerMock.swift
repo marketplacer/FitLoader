@@ -1,6 +1,5 @@
 import UIKit
 
-@objc
 class ReachableViewControllerMock: TegReachableViewController {  
   init() {
     view = UIView()

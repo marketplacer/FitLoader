@@ -9,7 +9,7 @@ import UIKit
 import MprHttp
 
 @objc
-public class TegReachabilityLoader {
+public class TegReachabilityLoader: NSObject {
   private let requestIdentity: TegHttpRequestIdentity
   private let httpText: TegHttpText
   
