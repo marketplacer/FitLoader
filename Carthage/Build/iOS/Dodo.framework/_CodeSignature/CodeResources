@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		M0rWavU1zjSZShmF08IgIFCFBrE=
+		OywCPZPWq1FQHfKmhV2703Agc9w=
 		</data>
 		<key>Headers/Dodo-Swift.h</key>
 		<data>
-		Ff5wfGuym9ACcmZ3gQIhQpECCfg=
+		hmYdv3MlnmcvLqCBxHlixKMvRfs=
 		</data>
 		<key>Headers/Dodo.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D5txoWk5Zszef170LC6CodYuR6Q=
+		x9bLwuj5019Hh4odo6buFig6qHc=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm.swiftdoc</key>
 		<data>
-		AcQceeiUD3mQZD/ASQ867eBr3cI=
+		0gm95TatGlPUP+kR4c6FyReNSUA=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm.swiftmodule</key>
 		<data>
-		hEhgafBPePxRmALXh7Lt5UAf8Ec=
+		H5o/riBRKaAmgGHU9hLAhknMmcA=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YbRRsoVhE8FiI89zvSnjdkiiG+k=
+		H7LA1GRL++6vWOk2DCEOpW7fkJ4=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XGDRwt+NC8jRpqSauN/XMX0UVME=
+		k14Lzoglbne32Hw4EUDdfodJXXc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -45,11 +45,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		M0rWavU1zjSZShmF08IgIFCFBrE=
+		OywCPZPWq1FQHfKmhV2703Agc9w=
 		</data>
 		<key>Headers/Dodo-Swift.h</key>
 		<data>
-		Ff5wfGuym9ACcmZ3gQIhQpECCfg=
+		hmYdv3MlnmcvLqCBxHlixKMvRfs=
 		</data>
 		<key>Headers/Dodo.h</key>
 		<data>
@@ -57,19 +57,19 @@
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm.swiftdoc</key>
 		<data>
-		AcQceeiUD3mQZD/ASQ867eBr3cI=
+		0gm95TatGlPUP+kR4c6FyReNSUA=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm.swiftmodule</key>
 		<data>
-		hEhgafBPePxRmALXh7Lt5UAf8Ec=
+		H5o/riBRKaAmgGHU9hLAhknMmcA=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YbRRsoVhE8FiI89zvSnjdkiiG+k=
+		H7LA1GRL++6vWOk2DCEOpW7fkJ4=
 		</data>
 		<key>Modules/Dodo.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XGDRwt+NC8jRpqSauN/XMX0UVME=
+		k14Lzoglbne32Hw4EUDdfodJXXc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
