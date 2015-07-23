@@ -25,7 +25,7 @@ class TegReachabilityMessage {
     show(message, inViewController: viewController, withIcon: .Reload)
   }
   
-  func hide(viewController: UIViewController) {
+  func hide(viewController: TegReachableViewController) {
     viewController.view.dodo.hide()
   }
   

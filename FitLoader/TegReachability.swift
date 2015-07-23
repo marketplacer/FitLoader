@@ -79,7 +79,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
     if failedLoader != nil { // there is a pending failed request waiting to be reloaded
       reloadFailedConnection()
     } else {
-      hideMessage()
+      hidePreviousFailureMessage()
     }
   }
   
@@ -113,15 +113,14 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
     }
   }
 
-  private func hideMessage() {
-    if let viewController = failedReachableViewController as? UIViewController {
+  func hidePreviousFailureMessage() {
+    if let viewController = failedReachableViewController {
       message.hide(viewController)
     }
   }
 
   private func reloadFailedConnection() {
     if let failedLoader = failedLoader {
-      hideMessage()
       failedLoader.startLoading()
     }
 

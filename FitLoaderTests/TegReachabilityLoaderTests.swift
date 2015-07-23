@@ -51,6 +51,8 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssert(viewControllerMock.failedLoader === nil)
   }
   
+  // MARK: - Handle error
+  
   func testShowKnownError422() {
     let loader = TegReachabilityLoader(httpText: httpTextMock,
       requestIdentity: identity,
@@ -68,6 +70,24 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssertEqual(1, dodoMock.results.total)
     XCTAssertEqual("📵", dodoMock.results.errors[0])
     XCTAssert(viewControllerMock.failedLoader === loader)
+  }
+  
+  func testShow_hideErrorMessageWhenReloaded() {
+    let loader = TegReachabilityLoader(httpText: httpTextMock,
+      requestIdentity: identity,
+      viewController: viewControllerMock,
+      authentication: nil,
+      onSuccess: { text in
+        return true
+      }
+    )
+    
+    loader.startLoading()
+    httpTextMock.simulateError_unprocessableEntity422("{ \"knownErrorText\": \"📵\" }")
+    
+    loader.startLoading()
+
+    XCTAssertFalse(dodoMock.results.visible)
   }
   
   func testShowUnknownNetworkError() {

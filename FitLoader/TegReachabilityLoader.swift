@@ -63,6 +63,8 @@ Return false when the returned text from server is not valid.
     if loading { return }
     if onSuccess == nil { return } // nobody wants the result
     
+    TegReachability.shared.hidePreviousFailureMessage()
+    
     onStarted?()
     
     var httpHeaders = [TegHttpHeader]()
