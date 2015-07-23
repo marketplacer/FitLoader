@@ -40,8 +40,8 @@
 		7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1011B295D60003684AC /* TegReachabilityAuthentication.swift */; };
 		7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */; };
 		7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1031B295D60003684AC /* TegReachableViewController.swift */; };
-		7EADD10C1B295D84003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
-		7EADD1111B295F88003684AC /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD1081B295D84003684AC /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EADD10C1B295D84003684AC /* MprReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* MprReachability.m */; };
+		7EADD1111B295F88003684AC /* MprReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADD1081B295D84003684AC /* MprReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */; };
 		7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1341B296866003684AC /* LyoutGuideMock.swift */; };
 		7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1351B296866003684AC /* TegHttpTextMock.swift */; };
@@ -54,7 +54,7 @@
 		7EADD1421B296924003684AC /* TegReachabilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D81B295C03003684AC /* TegReachabilityConstants.swift */; };
 		7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0D91B295C03003684AC /* TegReachabilityMessage.swift */; };
 		7EADD1441B296924003684AC /* TegReachabilityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD0DA1B295C03003684AC /* TegReachabilityLoader.swift */; };
-		7EADD1451B296951003684AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* Reachability.m */; };
+		7EADD1451B296951003684AC /* MprReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD1091B295D84003684AC /* MprReachability.m */; };
 		7EB5F6181B2A5479001D818F /* FitLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; };
 		7EB5F6191B2A5479001D818F /* FitLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0BB1B295BCC003684AC /* FitLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EB5F61B1B2A557A001D818F /* Dodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADD0E01B295CD0003684AC /* Dodo.framework */; };
@@ -160,8 +160,8 @@
 		7EADD1011B295D60003684AC /* TegReachabilityAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityAuthentication.swift; sourceTree = "<group>"; };
 		7EADD1021B295D60003684AC /* TegReachabilityMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityMessageDelegate.swift; sourceTree = "<group>"; };
 		7EADD1031B295D60003684AC /* TegReachableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachableViewController.swift; sourceTree = "<group>"; };
-		7EADD1081B295D84003684AC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		7EADD1091B295D84003684AC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7EADD1081B295D84003684AC /* MprReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MprReachability.h; sourceTree = "<group>"; };
+		7EADD1091B295D84003684AC /* MprReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MprReachability.m; sourceTree = "<group>"; };
 		7EADD10A1B295D84003684AC /* README_reachability */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_reachability; sourceTree = "<group>"; };
 		7EADD1331B296866003684AC /* ReachableViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachableViewControllerMock.swift; sourceTree = "<group>"; };
 		7EADD1341B296866003684AC /* LyoutGuideMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyoutGuideMock.swift; sourceTree = "<group>"; };
@@ -366,8 +366,8 @@
 		7EADD1071B295D7B003684AC /* AppleReachability */ = {
 			isa = PBXGroup;
 			children = (
-				7EADD1081B295D84003684AC /* Reachability.h */,
-				7EADD1091B295D84003684AC /* Reachability.m */,
+				7EADD1081B295D84003684AC /* MprReachability.h */,
+				7EADD1091B295D84003684AC /* MprReachability.m */,
 				7EADD10A1B295D84003684AC /* README_reachability */,
 			);
 			path = AppleReachability;
@@ -392,7 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EADD0C11B295BCC003684AC /* FitLoader.h in Headers */,
-				7EADD1111B295F88003684AC /* Reachability.h in Headers */,
+				7EADD1111B295F88003684AC /* MprReachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +589,7 @@
 			files = (
 				7EADD0DB1B295C03003684AC /* TegReachability.swift in Sources */,
 				7EADD0DC1B295C03003684AC /* TegReachabilityConstants.swift in Sources */,
-				7EADD10C1B295D84003684AC /* Reachability.m in Sources */,
+				7EADD10C1B295D84003684AC /* MprReachability.m in Sources */,
 				7EADD1051B295D60003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
 				7EADD1061B295D60003684AC /* TegReachableViewController.swift in Sources */,
 				7EADD1041B295D60003684AC /* TegReachabilityAuthentication.swift in Sources */,
@@ -603,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EADD1451B296951003684AC /* Reachability.m in Sources */,
+				7EADD1451B296951003684AC /* MprReachability.m in Sources */,
 				7EADD1371B296866003684AC /* ReachableViewControllerMock.swift in Sources */,
 				7EADD1381B296866003684AC /* LyoutGuideMock.swift in Sources */,
 				7EADD1401B296921003684AC /* TegReachableViewController.swift in Sources */,

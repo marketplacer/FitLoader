@@ -113,7 +113,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     )
     
     loader.startLoading()
-    reachabilityMock.currentReachabilityStatusMock = NetworkStatus(NotReachable.rawValue)
+    reachabilityMock.currentReachabilityStatusMock = MprNetworkStatus(NotReachable.rawValue)
     httpTextMock.simulateError(500, bodyTest: "Server error")
     
     XCTAssert(dodoMock.results.visible)

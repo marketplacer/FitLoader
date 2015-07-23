@@ -8,7 +8,7 @@ import UIKit
 public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   public static let shared = TegReachability()
 
-  var reachability: Reachability?
+  var reachability: MprReachability?
 
   private let message = TegReachabilityMessage()
 
@@ -44,9 +44,9 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   public func startListeningForNetworkStatusChanges(hostName: String) {
     if listeningForNetworkStatusChanges { return } // already setup
 
-    let newReachability = Reachability(hostName: hostName)
+    let newReachability = MprReachability(hostName: hostName)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityChanged:", name: kReachabilityChangedNotification, object: newReachability)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityChanged:", name: kMprReachabilityChangedNotification, object: newReachability)
 
     newReachability.startNotifier()
     reachability = newReachability
@@ -55,7 +55,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
   public func stopListeningForNetworkStatusChanges(hostName: String) {
     if !listeningForNetworkStatusChanges { return } // not listening
 
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: kReachabilityChangedNotification, object: reachability)
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: kMprReachabilityChangedNotification, object: reachability)
 
     reachability.map { $0.stopNotifier() }
     reachability = nil

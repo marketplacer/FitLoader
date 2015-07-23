@@ -1,9 +1,9 @@
 
 /// Emulates different network conditions in unit tests.
-class ReachabilityMock: Reachability {
-  var currentReachabilityStatusMock = NetworkStatus(ReachableViaWiFi.rawValue)
+class ReachabilityMock: MprReachability {
+  var currentReachabilityStatusMock = MprNetworkStatus(ReachableViaWiFi.rawValue)
   
-  override func currentReachabilityStatus() -> NetworkStatus {
+  override func currentReachabilityStatus() -> MprNetworkStatus {
     return currentReachabilityStatusMock
   }
 }
