@@ -1,6 +1,7 @@
 import UIKit
 import MprHttp
 import FitLoader
+import Dodo
 
 class ViewController: UIViewController, UINavigationControllerDelegate,
   TegReachableViewController {
@@ -12,6 +13,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate,
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    view.dodo.style.rightButton.hideOnTap = true
+    DodoBarDefaultStyles.locationTop = false
     
     navigationController?.delegate = self
     label.text = nil

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zN-sD-qu7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4zN-sD-qu7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -65,8 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-UH-Mh9">
-                                <rect key="frame" x="16" y="114" width="568" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-UH-Mh9">
+                                <rect key="frame" x="20" y="144" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,14 +74,22 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="d6f-FQ-0Y8">
                                 <rect key="frame" x="290" y="290" width="20" height="20"/>
                             </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Test keyboard evasion" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWI-TW-2Rv">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="SWI-TW-2Rv" secondAttribute="trailing" id="9PY-tL-AA3"/>
+                            <constraint firstItem="1uq-UH-Mh9" firstAttribute="top" secondItem="SWI-TW-2Rv" secondAttribute="bottom" constant="30" id="K8u-Ke-sKd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1uq-UH-Mh9" secondAttribute="trailing" id="LVp-R0-9FT"/>
                             <constraint firstAttribute="centerX" secondItem="d6f-FQ-0Y8" secondAttribute="centerX" id="P7g-ZL-iwd"/>
                             <constraint firstItem="1uq-UH-Mh9" firstAttribute="leading" secondItem="rSZ-qJ-orj" secondAttribute="leadingMargin" id="TAh-n7-sGI"/>
+                            <constraint firstItem="SWI-TW-2Rv" firstAttribute="top" secondItem="iOT-5X-Tj8" secondAttribute="bottom" constant="20" id="Z8w-m9-L4q"/>
                             <constraint firstAttribute="centerY" secondItem="d6f-FQ-0Y8" secondAttribute="centerY" id="eM6-o0-FSS"/>
-                            <constraint firstItem="1uq-UH-Mh9" firstAttribute="top" secondItem="iOT-5X-Tj8" secondAttribute="bottom" constant="50" id="qyM-Nq-Blz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="SWI-TW-2Rv" secondAttribute="leading" id="q9k-Bk-iQL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GIM-MV-8aX">
@@ -257,7 +265,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-ch-Asq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-ch-Asq">
                                 <rect key="frame" x="271" y="138" width="59" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Login">

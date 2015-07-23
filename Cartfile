@@ -1,2 +1,2 @@
-github "exchangegroup/Dodo" "debug_keyboard"
+github "exchangegroup/Dodo" ~> 2.0
 github "exchangegroup/MprHttp" ~> 2.0

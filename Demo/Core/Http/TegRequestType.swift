@@ -26,7 +26,7 @@ public enum TegRequestType: String {
     requestBodyText: String? = nil) -> TegHttpRequestIdentity {
 
       let url = TegRequestUrl().url(self, params: params)
-      var requestBody: NSData? = requestBodyText?.dataUsingEncoding(NSUTF8StringEncoding)
+      let requestBody: NSData? = requestBodyText?.dataUsingEncoding(NSUTF8StringEncoding)
 
       return TegHttpRequestIdentity(
         url: url,

@@ -41,6 +41,7 @@ class TegPresentViewController {
     let storyboardName = viewControllerName.storyboardName
     let bundle = NSBundle.mainBundle()
     let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: bundle)
-    return storyboard.instantiateViewControllerWithIdentifier(viewControllerName.rawValue) as? UIViewController
+      
+    return storyboard.instantiateViewControllerWithIdentifier(viewControllerName.rawValue)
   }
 }

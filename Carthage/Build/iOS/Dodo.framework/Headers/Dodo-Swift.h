@@ -87,12 +87,58 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 
 @interface UIView (SWIFT_EXTENSION(Dodo))
+@end
+
+@class NSLayoutConstraint;
+@protocol UILayoutSupport;
+
+
+/// Adjusts the length (constant value) of the bottom layout constraint when keyboard shows and hides.
+SWIFT_CLASS("_TtC4Dodo29UnderKeyboardLayoutConstraint")
+@interface UnderKeyboardLayoutConstraint : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+
+/// Stop listening for keyboard notifications.
+- (void)stop;
+
+/// Supply a bottom Auto Layout constraint. Its constant value will be adjusted by the height of the keyboard when it appears and hides.
+///
+/// \param bottomLayoutConstraint Supply a bottom layout constraint. Its constant value will be adjusted when keyboard is shown and hidden.
+///
+/// \param view Supply a view that will be used to animate the constraint. It is usually the superview containing the view with the constraint.
+///
+/// \param minMargin Specify the minimum margin between the keyboard and the bottom of the view the constraint is attached to. Default: 10.
+///
+/// \param bottomLayoutGuide Supply an optional bottom layout guide (like a tab bar) that will be taken into account during height calculations.
+- (void)setup:(NSLayoutConstraint * __nonnull)bottomLayoutConstraint view:(UIView * __nonnull)view minMargin:(CGFloat)minMargin bottomLayoutGuide:(id <UILayoutSupport> __nullable)bottomLayoutGuide;
+@end
+
+
+
+/// Detects appearance of software keyboard and calls the supplied closures that can be used for changing the layout and moving view from under the keyboard.
+SWIFT_CLASS("_TtC4Dodo21UnderKeyboardObserver")
+@interface UnderKeyboardObserver : NSObject
+
+/// Function that will be called before the keyboard is shown and before animation is started.
+@property (nonatomic, copy) void (^ __nullable willAnimateKeyboard)(BOOL, CGFloat);
+
+/// Function that will be called inside the animation block. This can be used to call layoutIfNeeded on the view.
+@property (nonatomic, copy) void (^ __nullable animateKeyboard)(BOOL, CGFloat);
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+
+/// Start listening for keyboard notifications.
+- (void)start;
+
+/// Stop listening for keyboard notifications.
+- (void)stop;
 @end
 
 #pragma clang diagnostic pop
