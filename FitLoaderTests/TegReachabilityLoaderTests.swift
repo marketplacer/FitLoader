@@ -121,4 +121,55 @@ class TegReachabilityLoaderTests: XCTestCase {
     XCTAssertEqual("No Internet connection", dodoMock.results.errors[0])
     XCTAssert(viewControllerMock.failedLoader === loader)
   }
+  
+  // MARK: - Loading
+  
+  func testLoading() {
+    let loader = TegReachabilityLoader(httpText: httpTextMock,
+      requestIdentity: identity,
+      viewController: viewControllerMock,
+      authentication: nil,
+      onSuccess: { text in return true }
+    )
+    
+    XCTAssertFalse(loader.loading)
+    
+    loader.startLoading()
+    
+    XCTAssert(loader.loading)
+    
+    httpTextMock.simulateSuccessfulResponse(bodyText: "🐞")
+
+    XCTAssertFalse(loader.loading)
+  }
+  
+  func testLoading_error() {
+    let loader = TegReachabilityLoader(httpText: httpTextMock,
+      requestIdentity: identity,
+      viewController: viewControllerMock,
+      authentication: nil,
+      onSuccess: { text in return true }
+    )
+    
+    loader.startLoading()
+    
+    httpTextMock.simulateError_unauthorized401()
+    
+    XCTAssertFalse(loader.loading)
+  }
+  
+  func testLoading_cancel() {
+    let loader = TegReachabilityLoader(httpText: httpTextMock,
+      requestIdentity: identity,
+      viewController: viewControllerMock,
+      authentication: nil,
+      onSuccess: { text in return true }
+    )
+    
+    loader.startLoading()
+
+    loader.cancel()
+    
+    XCTAssertFalse(loader.loading)
+  }
 }

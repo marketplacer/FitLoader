@@ -1,15 +1,15 @@
-//
-//  Loading Http text from server.
-//
-//  If onSuccess callback returns false - the request is considered failed.
-//  Return false when the returned text from server is not valid.
-//
-
 import UIKit
 import MprHttp
 
-@objc
-public class TegReachabilityLoader: NSObject {
+/**
+
+Loading Http text from server.
+
+If onSuccess callback returns false - the request is considered failed.
+Return false when the returned text from server is not valid.
+
+*/
+@objc public class TegReachabilityLoader: NSObject {
   private let requestIdentity: TegHttpRequestIdentity
   private let httpText: TegHttpText
   
@@ -54,8 +54,13 @@ public class TegReachabilityLoader: NSObject {
     cancel()
   }
   
+  /// Returns true if we are currently loading data from the network.
+  public var loading: Bool {
+    return downloadTask != nil
+  }
+  
   public func startLoading() {
-    if downloadTask != nil { return } // already loading
+    if loading { return }
     if onSuccess == nil { return } // nobody wants the result
     
     onStarted?()
@@ -81,6 +86,7 @@ public class TegReachabilityLoader: NSObject {
         self?.handleError(error, response: response, bodyText: body)
       },
       onAlways: { [weak self] in
+        self?.downloadTask = nil
         self?.onFinishedWithSuccessOrError?()
       }
     )
@@ -107,8 +113,6 @@ public class TegReachabilityLoader: NSObject {
         return
       }
     }
-    
-    downloadTask = nil
     
     // Save this loader as failed loader so the request can be repeated.
     if let reachableViewController = reachableViewController {
