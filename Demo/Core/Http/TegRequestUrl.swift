@@ -11,7 +11,7 @@ public struct TegRequestUrl {
     case .MyAccount:
       return "http://httpstat.us"
     case .Error422:
-      return "http://52.64.108.107:3000"
+      return "https://yaushop.com"
     default:
       return "https://dl.dropboxusercontent.com"
     }

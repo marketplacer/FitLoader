@@ -173,7 +173,7 @@ class TegReachabilityLoaderTests: XCTestCase {
     
     loader.startLoading()
     
-    httpTextMock.simulateError_unauthorized401()
+    httpTextMock.simulateError(500, bodyTest: "Server error")
     
     XCTAssertFalse(loader.loading)
   }

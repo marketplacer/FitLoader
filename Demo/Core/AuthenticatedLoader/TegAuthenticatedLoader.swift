@@ -28,22 +28,18 @@ public class TegAuthenticatedLoader: TegReachabilityLoader {
       authentication: authentication,
       onSuccess: onSuccess)
 
-    onError = handleError
+    onUnauthorized = handleUnauthorizedError
     self.delegate = delegate
   }
 
-  private func handleError(error: NSError?, response: NSHTTPURLResponse?, bodyText: String?) -> Bool {
+  private func handleUnauthorizedError(error: NSError?,
+    response: NSHTTPURLResponse?, bodyText: String?) {
 
-    // Show login screen if reponse status code is 401
-    if let response = response,
-      viewController = reachableViewController as? UIViewController,
-      currentDelegate = delegate
-      where response.statusCode == 401 {
+    // Show login screen for unauthorized response
+    if let viewController = reachableViewController as? UIViewController,
+      currentDelegate = delegate {
 
       loginScreenPresenter.present(viewController, delegate: currentDelegate)
-      return true
     }
-
-    return false
   }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BAC4BD61BD4A6D0004B6CD0 /* OnErrorHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4BD51BD4A6D0004B6CD0 /* OnErrorHandlerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		2BAC4BD81BD4A71F004B6CD0 /* OnUnauthorizedErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAC4BD71BD4A71F004B6CD0 /* OnUnauthorizedErrorTests.swift */; settings = {ASSET_TAGS = (); }; };
 		7E2D6B5C1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */; };
 		7E2D6B5E1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */; };
 		7E2D6B5F1B2FD90C00DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */; };
@@ -122,6 +124,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2BAC4BD51BD4A6D0004B6CD0 /* OnErrorHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnErrorHandlerTests.swift; sourceTree = "<group>"; };
+		2BAC4BD71BD4A71F004B6CD0 /* OnUnauthorizedErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnUnauthorizedErrorTests.swift; sourceTree = "<group>"; };
 		7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityKnownErrorMessageTests.swift; sourceTree = "<group>"; };
 		7E2D6B5D1B2FD89300DA8933 /* TegReachabilityKnownErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegReachabilityKnownErrorMessage.swift; sourceTree = "<group>"; };
 		7E7361511B2A42C0007BD5EF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				7EADD1321B296860003684AC /* Mocks */,
+				2BAC4BD51BD4A6D0004B6CD0 /* OnErrorHandlerTests.swift */,
+				2BAC4BD71BD4A71F004B6CD0 /* OnUnauthorizedErrorTests.swift */,
 				7EADD13B1B296874003684AC /* TegReachabilityLoaderTests.swift */,
 				7E2D6B5B1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift */,
 				7EADD0CB1B295BCC003684AC /* Supporting Files */,
@@ -609,12 +615,14 @@
 				7EADD1401B296921003684AC /* TegReachableViewController.swift in Sources */,
 				7EADD1431B296924003684AC /* TegReachabilityMessage.swift in Sources */,
 				7EADD13A1B296866003684AC /* ReachabilityMock.swift in Sources */,
+				2BAC4BD81BD4A71F004B6CD0 /* OnUnauthorizedErrorTests.swift in Sources */,
 				7EADD13E1B296921003684AC /* TegReachabilityAuthentication.swift in Sources */,
 				7E2D6B5C1B2FD7DB00DA8933 /* TegReachabilityKnownErrorMessageTests.swift in Sources */,
 				7E2D6B5F1B2FD90C00DA8933 /* TegReachabilityKnownErrorMessage.swift in Sources */,
 				7EADD13C1B296874003684AC /* TegReachabilityLoaderTests.swift in Sources */,
 				7EADD13F1B296921003684AC /* TegReachabilityMessageDelegate.swift in Sources */,
 				7EADD1391B296866003684AC /* TegHttpTextMock.swift in Sources */,
+				2BAC4BD61BD4A6D0004B6CD0 /* OnErrorHandlerTests.swift in Sources */,
 				7EADD1411B296924003684AC /* TegReachability.swift in Sources */,
 				7EADD1441B296924003684AC /* TegReachabilityLoader.swift in Sources */,
 				7EADD1421B296924003684AC /* TegReachabilityConstants.swift in Sources */,

@@ -23,18 +23,30 @@ Return false when the returned text from server is not valid.
   
   private var onSuccess: ((String)->(Bool))?
   
-  // Custom error handler.
-  // If it returns true it means the error is handled and no error messages are shown
-  // If it returns false - it shows the normal error messages.
+  /**
+  
+  Custom error handler.
+  If it returns true it means the error is handled and no error messages are shown.
+  If it returns false - it shows the normal error messages.
+  
+  */
   public var onError: ((NSError?, NSHTTPURLResponse?, String?)->(Bool))?
   
-  // The top view of the view controller will contain an error message view
+  /**
+  
+  The handler is called for responses with HTTP status code 401.
+  If you supply a closure it will not call onError handler and will not show the error message.
+  
+  */
+  public var onUnauthorized: ((NSError?, NSHTTPURLResponse?, String?)->())?
+  
+  /// The top view of the view controller will contain an error message view
   public weak var reachableViewController: TegReachableViewController?
   
-  // If present - called before loading is started. Useful to show 'loading' progress indicator.
+  /// If present - called before loading is started. Useful to show 'loading' progress indicator.
   public var onStarted: (()->())?
   
-  // If present - called before loading has finished. Useful to hide 'loading' progress indicator.
+  /// If present - called before loading has finished. Useful to hide 'loading' progress indicator.
   public var onFinishedWithSuccessOrError: (()->())?
   
   public init(httpText: TegHttpText,
@@ -109,6 +121,12 @@ Return false when the returned text from server is not valid.
   }
   
   private func handleError(error: NSError?, response: NSHTTPURLResponse?, bodyText: String?) {
+    if let response = response, onUnauthorized = onUnauthorized where response.statusCode == 401 {
+      onUnauthorized(error, response, bodyText)
+      // Error is handled by the callback so we are not calling onError and not showing error message.
+      return
+    }
+    
     if let onError = onError {
       if onError(error, response, bodyText) {
         // Error is handled by the callback
