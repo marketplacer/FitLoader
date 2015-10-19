@@ -105,6 +105,26 @@ Returns true if we are currently loading data from the network.
 
 ## Handlers
 
+### `onStarted`
+
+You can assign a closure to `onStarted` property that will be called before the network request is sent. It can be used to show an activity indicator, for example.
+
+```Swift
+loader.onStarted = {
+  // Has started loading
+}
+```
+
+### `onFinishedWithSuccessOrError`
+
+This handler is guaranteed to be called when network request finished with success or error. It can be used to hide activity indicator.
+
+```Swift
+newLoadder.onFinishedWithSuccessOrError = {
+  // Has finished loading
+}
+```
+
 ### `onError`
 
 You can assign a closure to `onError` property of the loader object. If you return `true` from this closure, the error is considered handled and no error message is shown.
@@ -122,24 +142,6 @@ The handler is called for responses with HTTP status code 401. If you supply a c
 ```Swift
 loader.onUnauthorized = { error, response, text in
   return true
-}
-```
-
-### `onStarted`
-
-You can assign a closure to `onStarted` property that will be called before the network request is sent. It can be used to show an activity indicator, for example.
-
-loader.onStarted = {
-  // Has started loading
-}
-
-### `onFinishedWithSuccessOrError`
-
-This handler is guaranteed to be called when network request finished with success or error. It can be used to hide activity indicator.
-
-```Swift
-newLoadder.onFinishedWithSuccessOrError = {
-  // Has finished loading
 }
 ```
 
