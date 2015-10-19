@@ -106,6 +106,11 @@ Return false when the returned text from server is not valid.
     )
   }
   
+  public func cancel() {
+    downloadTask?.cancel()
+    downloadTask = nil
+  }
+  
   private func handleSucess(text: String) -> Bool {
     if let currentOnSuccess = onSuccess {
       let result = currentOnSuccess(text)
@@ -182,8 +187,5 @@ Return false when the returned text from server is not valid.
     }
   }
   
-  public func cancel() {
-    downloadTask?.cancel()
-    downloadTask = nil
-  }
+  
 }

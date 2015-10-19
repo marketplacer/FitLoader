@@ -77,7 +77,7 @@ class MyViewController: UIViewController, TegReachableViewController {
 
 #### Step 3
 
-Use `TegReachabilityLoader` to load data from server.
+Instantiate `TegReachabilityLoader` class and call its `startLoading` method to load data from the network.
 
 #### Step 4
 
@@ -88,6 +88,60 @@ This is typically done in `navigationController(...willShowViewController` metho
 ```
 TegReachability.shared.reloadOldFailedRequest()
 ```
+
+## Methods and properties
+
+### `startLoading`
+
+Start loading data from the network.
+
+### `Cancel`
+
+Cancels the ongoing network request.
+
+### `loading`
+
+Returns true if we are currently loading data from the network.
+
+## Handlers
+
+### `onError`
+
+You can assign a closure to `onError` property of the loader object. If you return `true` from this closure, the error is considered handled and no error message is shown.
+
+```Swift
+loader.onError = { error, response, text in
+  return true
+}
+```
+
+### `onUnauthorized`
+
+The handler is called for responses with HTTP status code 401. If you supply a closure it will not call `onError` handler and will not show the error message.
+
+```Swift
+loader.onUnauthorized = { error, response, text in
+  return true
+}
+```
+
+### `onStarted`
+
+You can assign a closure to `onStarted` property that will be called before the network request is sent. It can be used to show an activity indicator, for example.
+
+loader.onStarted = {
+  // Has started loading
+}
+
+### `onFinishedWithSuccessOrError`
+
+This handler is guaranteed to be called when network request finished with success or error. It can be used to hide activity indicator.
+
+newLoadder.onFinishedWithSuccessOrError = {
+  // Has finished loading
+}
+
+
 
 ## Attribution
 
