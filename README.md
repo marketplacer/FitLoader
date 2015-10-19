@@ -137,10 +137,11 @@ loader.onStarted = {
 
 This handler is guaranteed to be called when network request finished with success or error. It can be used to hide activity indicator.
 
+```Swift
 newLoadder.onFinishedWithSuccessOrError = {
   // Has finished loading
 }
-
+```
 
 
 ## Attribution
