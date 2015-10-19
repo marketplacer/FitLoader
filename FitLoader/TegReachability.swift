@@ -57,7 +57,7 @@ public class TegReachability: NSObject, TegReachabilityMessageDelegate {
 
     NSNotificationCenter.defaultCenter().removeObserver(self, name: kMprReachabilityChangedNotification, object: reachability)
 
-    reachability.map { $0.stopNotifier() }
+    reachability?.stopNotifier()
     reachability = nil
   }
 

@@ -55,11 +55,11 @@ Return false when the returned text from server is not valid.
     authentication: TegReachabilityAuthentication?,
     onSuccess: (String)->(Bool)) {
       
-      self.httpText = httpText
-      self.requestIdentity = requestIdentity
-      self.onSuccess = onSuccess
-      reachableViewController = viewController
-      self.authentication = authentication
+    self.httpText = httpText
+    self.requestIdentity = requestIdentity
+    self.onSuccess = onSuccess
+    reachableViewController = viewController
+    self.authentication = authentication
   }
   
   deinit {
