@@ -4,7 +4,7 @@ This library sends HTTP requests and notifies user in case of a network issue.
 
 ## Setup with Carthage
 
-Add `github "exchangegroup/FitLoader" ~> 2.0` to your Cartfile and run `carthage update`.
+Add `github "marketplacer/FitLoader" ~> 2.0` to your Cartfile and run `carthage update`.
 
 
 ## How it works
@@ -19,19 +19,19 @@ There are three types of network issues that this library detects:
 
 Occurs when device can not reach Internet host. The app displays "No Internet connection" message. When internet connection becomes available this library automatically resends the HTTP request.
 
-<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/fit_loader_no_internet.png' alt='No Internet connection' width='250'>
+<img src='https://raw.githubusercontent.com/marketplacer/FitLoader/master/Graphics/github_images/fit_loader_no_internet.png' alt='No Internet connection' width='250'>
 
 #### 2. Request failure
 
 This error is shown if device is connected to the Internet but still can not send or receive an HTTP request for various reasons (server error, for example). In this case the app shows "Connection error" message with a refresh button.
 
-<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/fit_loader_connection_error.png' alt='Connection error' width='250'>
+<img src='https://raw.githubusercontent.com/marketplacer/FitLoader/master/Graphics/github_images/fit_loader_connection_error.png' alt='Connection error' width='250'>
 
 #### 3. Known error
 
 The server can send a response with HTTP status 422. If the body text is in the following JSON format it will be presented to the user in a message bar with a close button. If format is different, a 'Connection error' message will be shown.
 
-<img src='https://raw.githubusercontent.com/exchangegroup/FitLoader/master/Graphics/github_images/filt_loader_error_422.png' alt='Custom error 422' width='250'>
+<img src='https://raw.githubusercontent.com/marketplacer/FitLoader/master/Graphics/github_images/filt_loader_error_422.png' alt='Custom error 422' width='250'>
 
 ##### Known error JSON response format
 
@@ -152,4 +152,4 @@ loader.onUnauthorized = { error, response, text in
 
 ## Project home
 
-https://github.com/exchangegroup/reachability-ios
+https://github.com/marketplacer/reachability-ios
